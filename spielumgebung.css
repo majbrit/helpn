@@ -1,0 +1,157 @@
+/* CSS für die Spielumgebung */
+
+
+
+#gamearea {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: black solid;
+}
+
+#gamearea > div {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+}
+
+/* Bild */
+#image {
+    position: absolute;
+    
+    left: 10%;
+    top: 10%;
+    width: 60%;
+   
+
+}
+#bootgif {
+    position: absolute;
+    
+    left: 10%;
+    top: 10%;
+    width: 40%;
+   
+
+}
+
+
+/* erste Antwortmöglichkeit */
+#b1 {
+    color: #FFFFFF;
+    background-color: #000077;
+    border: 4px solid #FFFFFF;
+
+    position: absolute;
+    bottom: 3%;
+    left: 10%;
+    width: 20%;
+
+    -webkit-transition-duration: 1s; /* Safari */
+    transition-duration: 1s;
+}
+#b1:hover {
+    color: #000000;
+    background-color: #FFFFFF;
+}
+
+/* zweite Antwortmöglichkeit */
+#b2 {
+    color: #FFFFFF;
+    background-color: #000077;
+    border: 4px solid #FFFFFF;
+
+    position: absolute;
+    bottom: 3%;
+    left: 30%;
+    width: 20%;
+
+    -webkit-transition-duration: 1s; /* Safari */
+    transition-duration: 1s;
+}
+#b2:hover {
+    color: #000000;
+    background-color: #FFFFFF;
+}
+
+/* dritte Antwortmöglichkeit */
+#b3 {
+    color: #FFFFFF;
+    background-color: #000077;
+    border: 4px solid #FFFFFF;
+
+    position: absolute;
+    bottom: 3%;
+    left: 50%;
+    width: 20%;
+
+    -webkit-transition-duration: 1s; /* Safari */
+    transition-duration: 1s;
+}
+#b3:hover {
+    color: #000000;
+    background-color: #FFFFFF;
+}
+
+/* Button ("weiter") um von Richtig oder Falsch zum nächsten Level zu kommen */
+#ba {
+    position: absolute;
+    bottom: 10%;
+    right: 20%;
+    width: 20%;
+   
+
+    -webkit-transition-duration: 1s; /* Safari */
+    transition-duration: 1s;
+
+    color: white;
+    background-color: black;
+    border: 4px solid #FFFFFF;
+}
+#ba:hover {
+    color: black;
+    background-color: white;
+}
+
+/* Text der Frage */
+#text {
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    left: 75%;
+    
+
+    color: white;
+
+    
+}
+/* Rechenaufgabe für Level mit Wal */
+#aufgabe {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+}
+
+/* Richtig und Falsch als Text */
+#richtigfalsch {
+    position: relative;
+    top: 20%;
+    left: 10%;
+    right: 20%;
+    
+    color: white;
+    font-size: 50pt;
+}
+
+/* Lösungstext für Richtig und Falsch Seite */
+#loesung {
+    position: relative;
+    top: 30%;
+    left: 10%;
+
+    width: 400px;
+    
+    color: white;
+    font-size: 18pt;
+}
