@@ -111,6 +111,7 @@ class Richtig1 extends Stagerf {
         var p = document.createElement('div');
         p.innerHTML = "Punkte: " +punkte;
         stage1r.appendChild(p);
+        p.id = "punkte";
 
 
         //Button für weiter
@@ -248,6 +249,7 @@ class Richtig2 extends Stagerf {
         var p = document.createElement('div');
         p.innerHTML = "Punkte: " +punkte;
         stage2r.appendChild(p);
+        p.id = "punkte";
 
 
         //Button für weiter
@@ -382,6 +384,7 @@ class Richtig3 extends Stagerf {
         var p = document.createElement('div');
         p.innerHTML = "Punkte: " +punkte;
         stage3r.appendChild(p);
+        p.id = "punkte";
 
 
         //Button für weiter
@@ -515,6 +518,7 @@ class Richtig4 extends Stagerf {
         var p = document.createElement('div');
         p.innerHTML = "Punkte: " +punkte;
         stage4r.appendChild(p);
+        p.id = "punkte";
 
 
         //Button für weiter
@@ -656,6 +660,7 @@ class Richtig5 extends Stagerf {
         var p = document.createElement('div');
         p.innerHTML = "Punkte: " +punkte;
         stage5r.appendChild(p);
+        p.id = "punkte";
 
 
         //Button für weiter
@@ -789,6 +794,7 @@ class Richtig6 extends Stagerf {
         var p = document.createElement('div');
         p.innerHTML = "Punkte: " +punkte;
         stage6r.appendChild(p);
+        p.id = "punkte";
 
 
         //Button für weiter
@@ -920,6 +926,7 @@ class Richtig7 extends Stagerf {
         var p = document.createElement('div');
         p.innerHTML = "Punkte: " +punkte;
         stage7r.appendChild(p);
+        p.id = "punkte";
 
 
         //Button für weiter
@@ -1053,6 +1060,7 @@ class Richtig8 extends Stagerf {
         var p = document.createElement('div');
         p.innerHTML = "Punkte: " +punkte;
         stage8r.appendChild(p);
+        p.id = "punkte";
 
 
         //Button für weiter
@@ -1186,6 +1194,7 @@ class Richtig9 extends Stagerf {
         var p = document.createElement('div');
         p.innerHTML = "Punkte: " +punkte;
         stage9r.appendChild(p);
+        p.id = "punkte";
 
 
         //Button für weiter
@@ -1319,6 +1328,7 @@ class Richtig10 extends Stagerf {
         var p = document.createElement('div');
         p.innerHTML = "Punkte: " +punkte;
         stage10r.appendChild(p);
+        p.id = "punkte";
 
 
         //Button für weiter
@@ -1452,6 +1462,7 @@ class Richtig11 extends Stagerf {
         var p = document.createElement('div');
         p.innerHTML = "Punkte: " +punkte;
         stage11r.appendChild(p);
+        p.id = "punkte";
 
 
         //Button für weiter
@@ -1585,6 +1596,7 @@ class Richtig12 extends Stagerf {
         var p = document.createElement('div');
         p.innerHTML = "Punkte: " +punkte;
         stage12r.appendChild(p);
+        p.id = "punkte";
 
         //Button für weiter
         var buttona = document.createElement('button');
@@ -1708,7 +1720,7 @@ class Endstage extends Stage {
           punktetext.innerHTML = "Wow";
           endstage.appendChild(punktetext);
         } else {
-          punktetext.innerHTML = "";
+          punktetext.innerHTML = "Fehler";
           endstage.appendChild(punktetext);
         }
         punktetext.id = "punktetext";
@@ -1716,6 +1728,8 @@ class Endstage extends Stage {
         return endstage;
     }
 }
+
+
 
 var level1 = new Firststage();
 var richtig1 = new Richtig1();
