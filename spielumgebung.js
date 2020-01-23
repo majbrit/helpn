@@ -1,3 +1,4 @@
+//t
 // JavaScript für die Spielumgebung
 
 // Klasse für alle Level
