@@ -1474,7 +1474,7 @@ class Richtig11 extends Stagerf {
 
         //Funktion des Buttons
         buttona.onclick = function() {
-            level11.drawStage();
+            level12.drawStage();
         }
         return stage11r;
     }
@@ -1508,11 +1508,140 @@ class Falsch11 extends Stagerf {
 
         //Funktion des Buttons
         buttona.onclick = function() {
-            level11.drawStage();
+            level12.drawStage();
         }
         return stage11f;
     }
 }
+
+// Level 12 Textilbranche
+class Twelvestage extends Stage {
+    constructor() {
+        super("Level 12", "url('Bilder/hintergrund.PNG')")
+    }
+    getContent() {
+        var stage12 = document.createElement('div');
+
+        //Bild
+        var image = document.createElement("IMG");
+        image.src = "Bilder/Tshirts.gif";
+        stage12.appendChild(image);
+        image.id="image";
+
+        //erster Button
+        var button = document.createElement('button');
+        button.innerHTML = "2.7 Milliarden Tonnen CO2 pro Jahr";
+        stage12.appendChild(button);
+        button.id = "b1";
+
+        //zweiter Button
+        var button2 = document.createElement('button');
+        button2.innerHTML = "1,2 Milliarden Tonnen CO2 pro Jahr";
+        stage12.appendChild(button2);
+        button2.id = "b2";
+
+        //dritter Button
+        var button3 = document.createElement('button')
+        button3.innerHTML = "1,8 Milliarden Tonnen CO2 pro Jahr";
+        stage12.appendChild(button3);
+        button3.id = "b3";
+
+        //Funktionen der Button
+        button.onclick = function() {
+            falsch12.drawStage()
+        }
+        button2.onclick = function() {
+            richtig12.drawStage()
+        }
+        button3.onclick = function()
+        {
+            falsch12.drawStage()
+        }
+
+        //Fragestellung
+        var text = document.createElement('div');
+        text.innerHTML ="Die Textilbranche ist ein großer Umweltverschmutzer. Wie viel CO2 verbraucht die Textilbranche durchschnittlich im Jahr?";
+        stage12.appendChild(text);
+        text.id = "text";
+
+        //Geräusche
+        var audio = new Audio('G/Katze.mp3');
+        audio.play();
+        stage12.appendChild(audio);
+
+        return stage12;
+    }
+}
+
+// Richtig für Level12 Textilbranche
+class Richtig12 extends Stagerf {
+    constructor() {
+        super("Richtig 12", "green")
+    }
+    getContent() {
+        var stage12r = document.createElement('div');
+
+        //Button für weiter
+        var buttona = document.createElement('button');
+        buttona.innerHTML = "weiter";
+       stage12r.appendChild(buttona);
+        buttona.id = "ba";
+
+        //Überschrift "Richtig"
+        var richtigfalsch = document.createElement('div');
+        richtigfalsch.innerHTML ="Richtig";
+        stage12r.appendChild(richtigfalsch);
+        richtigfalsch.id = "richtigfalsch";
+
+        //Lösungstext
+        var loesung = document.createElement('div');
+        loesung.innerHTML ="1,2 Milliarden Tonnen CO2 pro Jahr, mehr als internationaler Flug- und Schiffsverkehr zusammen.";
+        stage12r.appendChild(loesung);
+        loesung.id = "loesung";
+
+        //Funktion des Buttons
+        buttona.onclick = function() {
+            level12.drawStage();
+        }
+        return stage12r;
+    }
+}
+
+// Falsch für Level12 Textilbranche
+class Falsch12 extends Stagerf {
+    constructor() {
+        super("Falsch 12", "red")
+    }
+    getContent() {
+        var stage12f = document.createElement('div');
+
+        //Button für weiter
+        var buttona = document.createElement('button');
+        buttona.innerHTML = "weiter";
+       stage12f.appendChild(buttona);
+        buttona.id = "ba";
+
+        //Überschrift "Falsch"
+        var richtigfalsch = document.createElement('div');
+        richtigfalsch.innerHTML ="Falsch";
+        stage12f.appendChild(richtigfalsch);
+        richtigfalsch.id = "richtigfalsch";
+
+        //Lösungstext
+        var loesung = document.createElement('div');
+        loesung.innerHTML ="Lösungstext";
+        stage12f.appendChild(loesung);
+        loesung.id = "loesung";
+
+
+        //Funktion des Buttons
+        buttona.onclick = function() {
+            level12.drawStage();
+        }
+        return stage12f;
+    }
+}
+
 
 //Message
 
@@ -1568,6 +1697,10 @@ var falsch10 = new Falsch10();
 var level11 = new Eleventhstage();
 var richtig11 = new Richtig11();
 var falsch11 = new Falsch11();
+
+var level12 = new Twelvestage();
+var richtig12 = new Richtig12();
+var falsch12 = new Falsch12();
 
 var endstage = new Endstage();
 
