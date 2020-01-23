@@ -2,13 +2,8 @@
 // Scores
 var punkte = 0;
 
-// Message
-var messages = {
-  6: "Okay",
-  8: "Gut"
 
-}
-// Klasse für alle Level
+//Klasse für alle Level
 class Stage {
     constructor(name, background) {
         this.name = name;
@@ -1519,6 +1514,16 @@ class Falsch11 extends Stagerf {
     }
 }
 
+//Message
+
+class Endstage extends Stage {
+    constructor() {
+        super("Level11", "url('Bilder/hintergrund.jpg')")
+    }
+    getContent() {
+        var endstage = document.createElement('div');
+    }
+}
 
 var level1 = new Firststage();
 var richtig1 = new Richtig1();
@@ -1563,6 +1568,8 @@ var falsch10 = new Falsch10();
 var level11 = new Eleventhstage();
 var richtig11 = new Richtig11();
 var falsch11 = new Falsch11();
+
+var endstage = new Endstage();
 
 
 level1.drawStage();
