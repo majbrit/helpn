@@ -1,6 +1,13 @@
-//t
 // JavaScript für die Spielumgebung
+// Scores
+var punkte = 0;
 
+// Message
+var messages = {
+  6: "Okay",
+  8: "Gut"
+
+}
 // Klasse für alle Level
 class Stage {
     constructor(name, background) {
@@ -97,12 +104,19 @@ class Firststage extends Stage {
 }
 
 // Richtig für Level1 Katzen
+
 class Richtig1 extends Stagerf {
     constructor() {
         super("Richtig 1", "green")
-    }
+  }
     getContent() {
         var stage1r = document.createElement('div');
+
+        punkte = punkte + 1;
+        var p = document.createElement('div');
+        p.innerHTML = "Punkte:" +punkte;
+        stage1r.appendChild(p);
+
 
         //Button für weiter
         var buttona = document.createElement('button');
@@ -165,7 +179,7 @@ class Falsch1 extends Stagerf {
     }
 }
 
-// Level 2 Schiff
+// Level 2 Kühe
 class Secoundstage extends Stage {
     constructor() {
         super("Level 2", "url('Bilder/hintergrund.jpg')")
@@ -173,33 +187,36 @@ class Secoundstage extends Stage {
     getContent() {
         var stage2 = document.createElement('div');
 
+
+
+
         //Bild
         var image = document.createElement("IMG");
-        image.src = "Bilder/boot.gif";
+        image.src = "Bilder/kuh.gif";
         stage2.appendChild(image);
         image.id="image";
 
         //erster Button
         var button = document.createElement('button');
-        button.innerHTML = "7200 Tonnen";
+        button.innerHTML = "angebautes Futtermittel";
         stage2.appendChild(button);
         button.id = "b1";
 
         //zweiter Button
         var button2 = document.createElement('button');
-        button2.innerHTML = "7000 Tonnen";
+        button2.innerHTML = "Weizen";
         stage2.appendChild(button2);
         button2.id = "b2";
 
         //dritter Button
         var button3 = document.createElement('button')
-        button3.innerHTML = "8200 Tonnen";
+        button3.innerHTML = "Soja";
         stage2.appendChild(button3);
         button3.id = "b3";
 
         //Fragestellung
         var text = document.createElement('div');
-        text.innerHTML ="Wenn ein Schiff 2000 Tonnen Öl im Meer verliert und ein weiteres doppelt so viel und ein drittes noch einmal 20% von der Menge der ersten beiden Schiffe, wieviel Tonnen Öl sind dann im Meer?";
+        text.innerHTML ="Durch die Tierhaltung wird der Schädliche Treibhausgas Methan ausgestoßen. Die Wahl des Futtermittels ist entscheidend für den Grad der Belastung des Kuh-Abgases. Welches der Futtermittel ist weniger belastend für die Umwelt und ist gesünder für die Kuh?";
         stage2.appendChild(text);
         text.id = "text";
 
@@ -224,13 +241,19 @@ class Secoundstage extends Stage {
     }
 }
 
-//Richtig für Level2 Schiff
+//Richtig für Level2 Kühe
 class Richtig2 extends Stagerf {
     constructor() {
         super("Richtig 2", "green")
     }
     getContent() {
         var stage2r = document.createElement('div');
+
+        punkte = punkte + 1;
+        var p = document.createElement('div');
+        p.innerHTML = "Punkte:" +punkte;
+        stage2r.appendChild(p);
+
 
         //Button für weiter
         var buttona = document.createElement('button');
@@ -246,7 +269,7 @@ class Richtig2 extends Stagerf {
 
         //Lösungstext
         var loesung = document.createElement('div');
-        loesung.innerHTML ="Es sind 7200 Tonnen Öl im Meer.";
+        loesung.innerHTML ="Das angebaute Futtermittel ist die Umweltfreundlichere Variante. Sie ist auch kostengünstiger und auch gesünder für die Kühe.";
         stage2r.appendChild(loesung);
         loesung.id = "loesung";
 
@@ -258,7 +281,7 @@ class Richtig2 extends Stagerf {
     }
 }
 
-// Falsch für Level2 Schiff
+// Falsch für Level2 Kühe
 class Falsch2 extends Stagerf {
     constructor() {
         super("Falsch 2", "red")
@@ -280,7 +303,7 @@ class Falsch2 extends Stagerf {
 
         //Lösungstext
         var loesung = document.createElement('div');
-        loesung.innerHTML ="Es sind 7200 Tonnen Öl im Meer.";
+        loesung.innerHTML ="Das angebaute Futtermittel ist die Umweltfreundlichere Variante. Sie ist auch kostengünstiger und auch gesünder für die Kühe.";
         stage2f.appendChild(loesung);
         loesung.id = "loesung";
 
@@ -292,7 +315,7 @@ class Falsch2 extends Stagerf {
     }
 }
 
-// Level 3 Wal
+// Level 3 Frösche
 class Thirdstage extends Stage {
     constructor() {
         super("Level 3", "url('Bilder/hintergrund.jpg')")
@@ -302,40 +325,34 @@ class Thirdstage extends Stage {
 
         //Bild
         var image = document.createElement("IMG");
-        image.src = "Bilder/Katzenneuhd.jpg";
+        image.src = "Bilder/frosch.gif";
         stage3.appendChild(image);
         image.id="image";
 
         //erster Button
         var button = document.createElement('button');
-        button.innerHTML = "100 kg";
+        button.innerHTML = "Frosch Nr. 6";
         stage3.appendChild(button);
         button.id = "b1";
 
         //zweiter Button
         var button2 = document.createElement('button');
-        button2.innerHTML = "13 kg";
+        button2.innerHTML = "Frosch Nr. 12";
         stage3.appendChild(button2);
         button2.id = "b2";
 
-        //dritter Button
+    //dritter Button
         var button3 = document.createElement('button')
-        button3.innerHTML = "40 kg";
+        button3.innerHTML = "Frosch Nr. 2";
         stage3.appendChild(button3);
         button3.id = "b3";
 
         //Fragestellung
         var text = document.createElement('div');
-        text.innerHTML ="In einem Cuvier-Schnabelwal wurden c kg Plastik gefunden. Die höchste Menge, die je in einem Wal gefunden wurde beträgt 250% von diesem Wert. Wieviel ist dies in kg?";
+        text.innerHTML ="Der See wurde von den Menschen verseucht. Genau ein Frosch ist heute krank geworden. Jeder orange gefärbte Frosch ist gestern schon krank geworden. Kein Frosch, der auf einem dunkelgrünen Blatt sitzt, ist krank geworden. Alle Frösche, die gestern schon krank geworden sind, sind heute nicht krank geworden. Direkt nebeneinander sitzende Frösche der gleichen Farbe werden immer gleichzeitig krank. Alle gelben Frösche, die auf einem Stein sitzen, sind gestern krank geworden. Welcher Frosch ist heute krank geworden?";
         stage3.appendChild(text);
         text.id = "text";
 
-        //Rechenaufgabe passend zu Fragestellung
-        var aufgabe = document.createElement('div');
-        aufgabe.innerHTML ="c";
-        aufgabe.innerHTML ="c = 8 : 2 + 64 - 2 - 26";
-        stage3.appendChild(aufgabe);
-        aufgabe.id = "aufgabe";
 
         //Funktionen der Button
         button.onclick = function() {
@@ -350,7 +367,7 @@ class Thirdstage extends Stage {
         }
 
         //Geräusche
-        var audio = new Audio('G/whale3.wav');
+        var audio = new Audio('G/Frosch2.mp3');
         audio.play();
         stage3.appendChild(audio);
 
@@ -358,13 +375,19 @@ class Thirdstage extends Stage {
     }
 }
 
-//Richtig für Level3 Wal
+//Richtig für Level3 Frösche
 class Richtig3 extends Stagerf {
     constructor() {
         super("Richtig 3", "green")
     }
     getContent() {
         var stage3r = document.createElement('div');
+
+        punkte = punkte + 1;
+        var p = document.createElement('div');
+        p.innerHTML = "Punkte:" +punkte;
+        stage3r.appendChild(p);
+
 
         //Button für weiter
         var buttona = document.createElement('button');
@@ -380,7 +403,7 @@ class Richtig3 extends Stagerf {
 
         //Lösungstext
         var loesung = document.createElement('div');
-        loesung.innerHTML ="Im November 2019 wurde ein Pottwal mit 100 kg Plastik im Magen gefunden.";
+        loesung.innerHTML ="Frosch Nr. 6 ist heute krank geworden.";
         stage3r.appendChild(loesung);
         loesung.id = "loesung";
 
@@ -392,7 +415,7 @@ class Richtig3 extends Stagerf {
     }
 }
 
-// Falsch für Level3 Wal
+// Falsch für Level3 Frösche
 class Falsch3 extends Stagerf {
     constructor() {
         super("Falsch 3", "red")
@@ -414,7 +437,7 @@ class Falsch3 extends Stagerf {
 
         //Lösungstext
         var loesung = document.createElement('div');
-        loesung.innerHTML ="Im November 2019 wurde ein Pottwal mit 100 kg Plastik im Magen gefunden.";
+        loesung.innerHTML ="Frosch Nr. 6 ist heute krank geworden.";
         stage3f.appendChild(loesung);
         loesung.id = "loesung";
 
@@ -426,7 +449,7 @@ class Falsch3 extends Stagerf {
     }
 }
 
-// Level 4 Frösche
+// Level 4 Bienen
 class Forthstage extends Stage {
     constructor() {
         super("Level 4", "url('Bilder/hintergrund.jpg')")
@@ -436,31 +459,31 @@ class Forthstage extends Stage {
 
         //Bild
         var image = document.createElement("IMG");
-        image.src = "Bilder/frosch.gif";
+        image.src = "Bilder/Biene.gif";
         stage4.appendChild(image);
         image.id="image";
 
         //erster Button
         var button = document.createElement('button');
-        button.innerHTML = "Frosch Nr. 2";
+        button.innerHTML = "Sie ertrinken";
         stage4.appendChild(button);
         button.id = "b1";
 
         //zweiter Button
         var button2 = document.createElement('button');
-        button2.innerHTML = "Frosch Nr. 12";
+        button2.innerHTML = "Es wird zu warm";
         stage4.appendChild(button2);
         button2.id = "b2";
 
         //dritter Button
         var button3 = document.createElement('button')
-        button3.innerHTML = "Frosch Nr. 6";
+        button3.innerHTML = "Viren und Krankheitserreger";
         stage4.appendChild(button3);
         button3.id = "b3";
 
         //Fragestellung
         var text = document.createElement('div');
-        text.innerHTML ="Der See wurde von den Menschen verseucht. Genau ein Frosch ist heute krank geworden. Jeder orange gefärbte Frosch ist gestern schon krank geworden. Kein Frosch, der auf einem dunkelgrünen Blatt sitzt, ist krank geworden. Alle Frösche, die gestern schon krank geworden sind, sind heute nicht krank geworden. Direkt nebeneinander sitzende Frösche der gleichen Farbe werden immer gleichzeitig krank. Alle gelben Frösche, die auf einem Stein sitzen, sind gestern krank geworden. Welcher Frosch ist heute krank geworden?";
+        text.innerHTML ="Was ist einer der Gründe wieso Bienen sterben?";
         stage4.appendChild(text);
         text.id = "text";
 
@@ -485,13 +508,19 @@ class Forthstage extends Stage {
     }
 }
 
-//Richtig für Level4 Frösche
+//Richtig für Level4 Bienen
 class Richtig4 extends Stagerf {
     constructor() {
         super("Richtig 4", "green")
     }
     getContent() {
         var stage4r = document.createElement('div');
+
+        punkte = punkte + 1;
+        var p = document.createElement('div');
+        p.innerHTML = "Punkte:" +punkte;
+        stage4r.appendChild(p);
+
 
         //Button für weiter
         var buttona = document.createElement('button');
@@ -507,7 +536,7 @@ class Richtig4 extends Stagerf {
 
         //Lösungstext
         var loesung = document.createElement('div');
-        loesung.innerHTML ="Frosch Nr. 6 ist heute krank geworden.";
+        loesung.innerHTML ="Sie sterben unter anderem an Vieren und Krankheitserreger.";
         stage4r.appendChild(loesung);
         loesung.id = "loesung";
 
@@ -519,7 +548,7 @@ class Richtig4 extends Stagerf {
     }
 }
 
-// Falsch für Level4 Frösche
+// Falsch für Level4 Bienen
 class Falsch4 extends Stagerf {
     constructor() {
         super("Falsch 4", "red")
@@ -541,7 +570,7 @@ class Falsch4 extends Stagerf {
 
         //Lösungstext
         var loesung = document.createElement('div');
-        loesung.innerHTML ="Frosch Nr. 6 ist heute krank geworden.";
+        loesung.innerHTML ="Sie sterben unter anderem an Vieren und Krankheitserreger.";
         stage4f.appendChild(loesung);
         loesung.id = "loesung";
 
@@ -553,7 +582,7 @@ class Falsch4 extends Stagerf {
     }
 }
 
-// Level 5 Schildkröten
+// Level 5 Wal
 class Fifthstage extends Stage {
     constructor() {
         super("Level 5", "url('Bilder/hintergrund.jpg')")
@@ -563,35 +592,43 @@ class Fifthstage extends Stage {
 
         //Bild
         var image = document.createElement("IMG");
-        image.src = "Bilder/Schildkröte2.gif";
+        image.src = "Bilder/wal.png.gif";
         stage5.appendChild(image);
         image.id="image";
 
         //erster Button
         var button = document.createElement('button');
-        button.innerHTML = "5341";
+        button.innerHTML = "100 kg";
         stage5.appendChild(button);
         button.id = "b1";
 
         //zweiter Button
         var button2 = document.createElement('button');
-        button2.innerHTML = "8251";
+        button2.innerHTML = "13 kg";
         stage5.appendChild(button2);
         button2.id = "b2";
 
         //dritter Button
         var button3 = document.createElement('button')
-        button3.innerHTML = "4243";
+        button3.innerHTML = "40 kg";
         stage5.appendChild(button3);
         button3.id = "b3";
 
         //Fragestellung
         var text = document.createElement('div');
-        text.innerHTML ="Plastiktüten: abdekllnuu abehlllu degklnnruü eghllnrü";
+        text.innerHTML ="In einem Cuvier-Schnabelwal wurden c kg Plastik gefunden. Die höchste Menge, die je in einem Wal gefunden wurde beträgt 250% von diesem Wert. Wieviel ist dies in kg?";
         stage5.appendChild(text);
         text.id = "text";
 
-        //Funktionen der Button
+        //Rechenaufgabe passend zu Fragestellung
+             var aufgabe = document.createElement('div');
+             aufgabe.innerHTML ="c";
+             aufgabe.innerHTML ="c = 8 : 2 + 64 - 2 - 26";
+             stage5.appendChild(aufgabe);
+             aufgabe.id = "aufgabe";
+
+
+       //Funktionen der Button
         button.onclick = function() {
             richtig5.drawStage()
         }
@@ -604,7 +641,7 @@ class Fifthstage extends Stage {
         }
 
         //Geräusche
-        var audio = new Audio('G/Meer.mp3');
+        var audio = new Audio('G/whale3.wav');
         audio.play();
         stage5.appendChild(audio);
 
@@ -612,13 +649,19 @@ class Fifthstage extends Stage {
     }
 }
 
-//Richtig für Level5 Schildkröte
+//Richtig für Level5 Wal
 class Richtig5 extends Stagerf {
     constructor() {
         super("Richtig 5", "green")
     }
     getContent() {
         var stage5r = document.createElement('div');
+
+        punkte = punkte + 1;
+        var p = document.createElement('div');
+        p.innerHTML = "Punkte:" +punkte;
+        stage5r.appendChild(p);
+
 
         //Button für weiter
         var buttona = document.createElement('button');
@@ -634,7 +677,7 @@ class Richtig5 extends Stagerf {
 
         //Lösungstext
         var loesung = document.createElement('div');
-        loesung.innerHTML ="5341 ist richtig, da 5 dunkelblaue, 3 hellblaue, 4 dunkelgrüne und eine hellgrüne Plastiktüte im Bild zu finden waren.";
+        loesung.innerHTML ="Im November 2019 wurde ein Pottwal mit 100 kg Plastik im Magen gefunden.";
         stage5r.appendChild(loesung);
         loesung.id = "loesung";
 
@@ -646,7 +689,7 @@ class Richtig5 extends Stagerf {
     }
 }
 
-// Falsch für Level5 Schildkröten
+// Falsch für Level5 Wal
 class Falsch5 extends Stagerf {
     constructor() {
         super("Falsch 5", "red")
@@ -668,7 +711,7 @@ class Falsch5 extends Stagerf {
 
         //Lösungstext
         var loesung = document.createElement('div');
-        loesung.innerHTML ="5341 ist richtig, da 5 dunkelblaue, 3 hellblaue, 4 dunkelgrüne und eine hellgrüne Plastiktüte im Bild zu finden waren.";
+        loesung.innerHTML ="Im November 2019 wurde ein Pottwal mit 100 kg Plastik im Magen gefunden.";
         stage5f.appendChild(loesung);
         loesung.id = "loesung";
 
@@ -680,7 +723,7 @@ class Falsch5 extends Stagerf {
     }
 }
 
-// Level 6 Tiere
+// Level 6 Schildkröten
 class Sixthstage extends Stage {
     constructor() {
         super("Level 6", "url('Bilder/hintergrund.jpg')")
@@ -690,25 +733,25 @@ class Sixthstage extends Stage {
 
         //Bild
         var image = document.createElement("IMG");
-        image.src = "Bilder/kuh.gif";
+        image.src = "Bilder/Schildkröte2.gif";
         stage6.appendChild(image);
         image.id="image";
 
         //erster Button
         var button = document.createElement('button');
-        button.innerHTML = "Soja";
+        button.innerHTML = "4243";
         stage6.appendChild(button);
         button.id = "b1";
 
         //zweiter Button
         var button2 = document.createElement('button');
-        button2.innerHTML = "Weizen";
+        button2.innerHTML = "8251";
         stage6.appendChild(button2);
         button2.id = "b2";
 
         //dritter Button
         var button3 = document.createElement('button')
-        button3.innerHTML = "angebautes Futtermittel";
+        button3.innerHTML = "5341";
         stage6.appendChild(button3);
         button3.id = "b3";
 
@@ -726,12 +769,12 @@ class Sixthstage extends Stage {
 
         //Fragestellung
         var text = document.createElement('div');
-        text.innerHTML ="Durch die Tierhaltung wird der schädliche Treibhausgas Methan ausgestoßen. Die Wahl des Futtermittels ist entscheidend für den Grad der Belastung des Kuh-Abgases. Welches der Futtermittel ist weniger belastend für die Umwelt und ist gesünder für die Kuh?";
+        text.innerHTML ="Plastiktüten: abdekllnuu abehlllu degklnnruü eghllnrü";
         stage6.appendChild(text);
         text.id = "text";
 
         //Geräusche
-        var audio = new Audio('G/Katze.mp3');
+        var audio = new Audio('G/Meer.mp3');
         audio.play();
         stage6.appendChild(audio);
 
@@ -739,13 +782,19 @@ class Sixthstage extends Stage {
     }
 }
 
-// Richtig für Level6 Tiere
+// Richtig für Level6 Schildkröten
 class Richtig6 extends Stagerf {
     constructor() {
         super("Richtig 6", "green")
     }
     getContent() {
         var stage6r = document.createElement('div');
+
+        punkte = punkte + 1;
+        var p = document.createElement('div');
+        p.innerHTML = "Punkte:" +punkte;
+        stage6r.appendChild(p);
+
 
         //Button für weiter
         var buttona = document.createElement('button');
@@ -761,7 +810,7 @@ class Richtig6 extends Stagerf {
 
         //Lösungstext
         var loesung = document.createElement('div');
-        loesung.innerHTML ="Das angebaute Futtermittel ist die Günstigere variante und auch gesünder für die Kühe";
+        loesung.innerHTML ="5341 ist richtig, da 5 dunkelblaue, 3 hellblaue, 4 dunkelgrüne und eine hellgrüne Plastiktüte im Bild zu finden waren.";
         stage6r.appendChild(loesung);
         loesung.id = "loesung";
 
@@ -773,7 +822,7 @@ class Richtig6 extends Stagerf {
     }
 }
 
-// Falsch für Level6 Tiere
+// Falsch für Level6 Schildkröten
 class Falsch6 extends Stagerf {
     constructor() {
         super("Falsch 6", "red")
@@ -792,7 +841,7 @@ class Falsch6 extends Stagerf {
         richtigfalsch.id = "richtigfalsch";
 
         var loesung = document.createElement('div');
-        loesung.innerHTML ="Lösungstext";
+        loesung.innerHTML ="5341 ist richtig, da 5 dunkelblaue, 3 hellblaue, 4 dunkelgrüne und eine hellgrüne Plastiktüte im Bild zu finden waren.";
         stage6f.appendChild(loesung);
         loesung.id = "loesung";
 
@@ -805,7 +854,7 @@ class Falsch6 extends Stagerf {
     }
 }
 
-// Level 7 Wald
+// Level 7 Robbe
 class Seventhstage extends Stage {
     constructor() {
         super("Level 7", "url('Bilder/hintergrund.jpg')")
@@ -815,7 +864,7 @@ class Seventhstage extends Stage {
 
         //Bild
         var image = document.createElement("IMG");
-        image.src = "Bilder/wald.gif";
+        image.src = "Bilder/icon.png";
         stage7.appendChild(image);
         image.id="image";
 
@@ -851,12 +900,12 @@ class Seventhstage extends Stage {
 
         //Fragestellung
         var text = document.createElement('div');
-        text.innerHTML ="Was ist die meiste/häufigste Ursache von Waldbränden?";
+        text.innerHTML ="Frage?";
         stage7.appendChild(text);
         text.id = "text";
 
         //Geräusche
-        var audio = new Audio('G/Katze.mp3');
+        var audio = new Audio('G/Meer.mp3');
         audio.play();
         stage7.appendChild(audio);
 
@@ -864,13 +913,19 @@ class Seventhstage extends Stage {
     }
 }
 
-// Richtig für Level7 Wald
+// Richtig für Level7 Robbe
 class Richtig7 extends Stagerf {
     constructor() {
         super("Richtig 7", "green")
     }
     getContent() {
         var stage7r = document.createElement('div');
+
+        punkte = punkte + 1;
+        var p = document.createElement('div');
+        p.innerHTML = "Punkte:" +punkte;
+        stage7r.appendChild(p);
+
 
         //Button für weiter
         var buttona = document.createElement('button');
@@ -898,7 +953,7 @@ class Richtig7 extends Stagerf {
     }
 }
 
-// Falsch für Level7 Wald
+// Falsch für Level7 Robbe
 class Falsch7 extends Stagerf {
     constructor() {
         super("Falsch 7", "red")
@@ -932,7 +987,7 @@ class Falsch7 extends Stagerf {
     }
 }
 
-// Level 8 Bienen
+// Level 8 Boot
 class Eighthstage extends Stage {
     constructor() {
         super("Level8", "url('Bilder/hintergrund.jpg')")
@@ -942,25 +997,25 @@ class Eighthstage extends Stage {
 
         //Bild
         var image = document.createElement("IMG");
-        image.src = "Bilder/Katzenneuhd.jpg";
+        image.src = "Bilder/boot.gif";
         stage8.appendChild(image);
         image.id="image";
 
         //erster Button
         var button = document.createElement('button');
-        button.innerHTML = "falsch";
+        button.innerHTML = "8200 Tonnen";
         stage8.appendChild(button);
         button.id = "b1";
 
         //zweiter Button
         var button2 = document.createElement('button');
-        button2.innerHTML = "richtig";
+        button2.innerHTML = "7200 Tonnen";
         stage8.appendChild(button2);
         button2.id = "b2";
 
         //dritter Button
         var button3 = document.createElement('button')
-        button3.innerHTML = "falsch";
+        button3.innerHTML = "7000 Tonnen";
         stage8.appendChild(button3);
         button3.id = "b3";
 
@@ -978,12 +1033,12 @@ class Eighthstage extends Stage {
 
         //Fragestellung
         var text = document.createElement('div');
-        text.innerHTML ="Frage?";
+        text.innerHTML ="Wenn ein Schiff 2000 Tonnen Öl im Meer verliert und ein weiteres doppelt so viel und ein drittes noch einmal 20% von der Menge der ersten beiden Schiffe, wieviel Tonnen Öl sind dann im Meer?";
         stage8.appendChild(text);
         text.id = "text";
 
         //Geräusche
-        var audio = new Audio('G/Katze.mp3');
+        var audio = new Audio('G/Schiff.mp3');
         audio.play();
         stage8.appendChild(audio);
 
@@ -991,13 +1046,19 @@ class Eighthstage extends Stage {
     }
 }
 
-// Richtig für Level8 Bienen
+// Richtig für Level8 Boot
 class Richtig8 extends Stagerf {
     constructor() {
         super("Richtig 8", "green")
     }
     getContent() {
         var stage8r = document.createElement('div');
+
+        punkte = punkte + 1;
+        var p = document.createElement('div');
+        p.innerHTML = "Punkte:" +punkte;
+        stage8r.appendChild(p);
+
 
         //Button für weiter
         var buttona = document.createElement('button');
@@ -1013,7 +1074,7 @@ class Richtig8 extends Stagerf {
 
         //Lösungstext
         var loesung = document.createElement('div');
-        loesung.innerHTML ="Lösungstext";
+        loesung.innerHTML ="Es sind 7200 Tonnen Öl im Meer.";
         stage8r.appendChild(loesung);
         loesung.id = "loesung";
 
@@ -1025,7 +1086,7 @@ class Richtig8 extends Stagerf {
     }
 }
 
-// Falsch für Level8 Bienen
+// Falsch für Level8 Boot
 class Falsch8 extends Stagerf {
     constructor() {
         super("Falsch 8", "red")
@@ -1047,7 +1108,7 @@ class Falsch8 extends Stagerf {
 
         //Lösungstext
         var loesung = document.createElement('div');
-        loesung.innerHTML ="Lösungstext";
+        loesung.innerHTML ="Es sind 7200 Tonnen Öl im Meer.";
         stage8f.appendChild(loesung);
         loesung.id = "loesung";
 
@@ -1059,7 +1120,7 @@ class Falsch8 extends Stagerf {
     }
 }
 
-// Level 9 Robbe
+// Level 9 Brand
 class Ninthstage extends Stage {
     constructor() {
         super("Level9", "url('Bilder/hintergrund.jpg')")
@@ -1069,7 +1130,7 @@ class Ninthstage extends Stage {
 
         //Bild
         var image = document.createElement("IMG");
-        image.src = "Bilder/Katzenneuhd.jpg";
+        image.src = "Bilder/Icon.png";
         stage9.appendChild(image);
         image.id="image";
 
@@ -1110,7 +1171,7 @@ class Ninthstage extends Stage {
         text.id = "text";
 
         //Geräusche
-        var audio = new Audio('G/Katze.mp3');
+        var audio = new Audio('G/frosch.mp3');
         audio.play();
         stage9.appendChild(audio);
 
@@ -1118,13 +1179,19 @@ class Ninthstage extends Stage {
     }
 }
 
-// Richtig für Level9 Robbe
+// Richtig für Level9 Brand
 class Richtig9 extends Stagerf {
     constructor() {
         super("Richtig 9", "green")
     }
     getContent() {
         var stage9r = document.createElement('div');
+
+        punkte = punkte + 1;
+        var p = document.createElement('div');
+        p.innerHTML = "Punkte:" +punkte;
+        stage9r.appendChild(p);
+
 
         //Button für weiter
         var buttona = document.createElement('button');
@@ -1152,7 +1219,7 @@ class Richtig9 extends Stagerf {
     }
 }
 
-// Falsch für Level9 Robbe
+// Falsch für Level9 Brand
 class Falsch9 extends Stagerf {
     constructor() {
         super("Falsch ", "red")
@@ -1186,7 +1253,7 @@ class Falsch9 extends Stagerf {
     }
 }
 
-// Level 10 Brand
+// Level 10 Wald
 class Tenthstage extends Stage {
     constructor() {
         super("Level10", "url('Bilder/hintergrund.jpg')")
@@ -1196,7 +1263,7 @@ class Tenthstage extends Stage {
 
         //Bild
         var image = document.createElement("IMG");
-        image.src = "Bilder/Katzenneuhd.jpg";
+        image.src = "Bilder/wald.gif";
         stage10.appendChild(image);
         image.id="image";
 
@@ -1245,13 +1312,19 @@ class Tenthstage extends Stage {
     }
 }
 
-// Richtig für Level10 Brand
+// Richtig für Level10 Wald
 class Richtig10 extends Stagerf {
     constructor() {
         super("Richtig 10", "green")
     }
     getContent() {
         var stage10r = document.createElement('div');
+
+        punkte = punkte + 1;
+        var p = document.createElement('div');
+        p.innerHTML = "Punkte:" +punkte;
+        stage10r.appendChild(p);
+
 
         //Button für weiter
         var buttona = document.createElement('button');
@@ -1279,7 +1352,7 @@ class Richtig10 extends Stagerf {
     }
 }
 
-// Falsch für Level10 Brand
+// Falsch für Level10 Wald
 class Falsch10 extends Stagerf {
     constructor() {
         super("Falsch ", "red")
@@ -1323,25 +1396,25 @@ class Eleventhstage extends Stage {
 
         //Bild
         var image = document.createElement("IMG");
-        image.src = "Bilder/Katzenneuhd.jpg";
+        image.src = "Bilder/Australien.gif";
         stage11.appendChild(image);
         image.id="image";
 
         //erster Button
         var button = document.createElement('button');
-        button.innerHTML = "falsch";
+        button.innerHTML = "3 Millionen Hektar";
         stage11.appendChild(button);
         button.id = "b1";
 
         //zweiter Button
         var button2 = document.createElement('button');
-        button2.innerHTML = "richtig";
+        button2.innerHTML = "6 Millionen Hektar";
         stage11.appendChild(button2);
         button2.id = "b2";
 
         //dritter Button
         var button3 = document.createElement('button')
-        button3.innerHTML = "falsch";
+        button3.innerHTML = "8 Millionen Hektar";
         stage11.appendChild(button3);
         button3.id = "b3";
 
@@ -1359,7 +1432,7 @@ class Eleventhstage extends Stage {
 
         //Fragestellung
         var text = document.createElement('div');
-        text.innerHTML ="Frage?";
+        text.innerHTML ="Wieviel Hektar wurde in Australien schon verbrannt?";
         stage11.appendChild(text);
         text.id = "text";
 
@@ -1380,6 +1453,12 @@ class Richtig11 extends Stagerf {
     getContent() {
         var stage11r = document.createElement('div');
 
+        punkte = punkte + 1;
+        var p = document.createElement('div');
+        p.innerHTML = "Punkte:" +punkte;
+        stage11r.appendChild(p);
+
+
         //Button für weiter
         var buttona = document.createElement('button');
         buttona.innerHTML = "weiter";
@@ -1394,7 +1473,7 @@ class Richtig11 extends Stagerf {
 
         //Lösungstext
         var loesung = document.createElement('div');
-        loesung.innerHTML ="Lösungstext";
+        loesung.innerHTML ="In Australien wüten die stärksten Brände in der Geschichte des Landes. 6 Millionen Hektar wurde in Australien schon verbrannt.";
         stage11r.appendChild(loesung);
         loesung.id = "loesung";
 
@@ -1428,7 +1507,7 @@ class Falsch11 extends Stagerf {
 
         //Lösungstext
         var loesung = document.createElement('div');
-        loesung.innerHTML ="Lösungstext";
+        loesung.innerHTML ="In Australien wüten die stärksten Brände in der Geschichte des Landes. 6 Millionen Hektar wurde in Australien schon verbrannt.";
         stage11f.appendChild(loesung);
         loesung.id = "loesung";
 
@@ -1439,6 +1518,7 @@ class Falsch11 extends Stagerf {
         return stage11f;
     }
 }
+
 
 var level1 = new Firststage();
 var richtig1 = new Richtig1();
