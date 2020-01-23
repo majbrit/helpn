@@ -109,7 +109,7 @@ class Richtig1 extends Stagerf {
 
         punkte = punkte + 1;
         var p = document.createElement('div');
-        p.innerHTML = "Punkte:" +punkte;
+        p.innerHTML = "Punkte: " +punkte;
         stage1r.appendChild(p);
 
 
@@ -246,7 +246,7 @@ class Richtig2 extends Stagerf {
 
         punkte = punkte + 1;
         var p = document.createElement('div');
-        p.innerHTML = "Punkte:" +punkte;
+        p.innerHTML = "Punkte: " +punkte;
         stage2r.appendChild(p);
 
 
@@ -380,7 +380,7 @@ class Richtig3 extends Stagerf {
 
         punkte = punkte + 1;
         var p = document.createElement('div');
-        p.innerHTML = "Punkte:" +punkte;
+        p.innerHTML = "Punkte: " +punkte;
         stage3r.appendChild(p);
 
 
@@ -513,7 +513,7 @@ class Richtig4 extends Stagerf {
 
         punkte = punkte + 1;
         var p = document.createElement('div');
-        p.innerHTML = "Punkte:" +punkte;
+        p.innerHTML = "Punkte: " +punkte;
         stage4r.appendChild(p);
 
 
@@ -654,7 +654,7 @@ class Richtig5 extends Stagerf {
 
         punkte = punkte + 1;
         var p = document.createElement('div');
-        p.innerHTML = "Punkte:" +punkte;
+        p.innerHTML = "Punkte: " +punkte;
         stage5r.appendChild(p);
 
 
@@ -787,7 +787,7 @@ class Richtig6 extends Stagerf {
 
         punkte = punkte + 1;
         var p = document.createElement('div');
-        p.innerHTML = "Punkte:" +punkte;
+        p.innerHTML = "Punkte: " +punkte;
         stage6r.appendChild(p);
 
 
@@ -918,7 +918,7 @@ class Richtig7 extends Stagerf {
 
         punkte = punkte + 1;
         var p = document.createElement('div');
-        p.innerHTML = "Punkte:" +punkte;
+        p.innerHTML = "Punkte: " +punkte;
         stage7r.appendChild(p);
 
 
@@ -1051,7 +1051,7 @@ class Richtig8 extends Stagerf {
 
         punkte = punkte + 1;
         var p = document.createElement('div');
-        p.innerHTML = "Punkte:" +punkte;
+        p.innerHTML = "Punkte: " +punkte;
         stage8r.appendChild(p);
 
 
@@ -1184,7 +1184,7 @@ class Richtig9 extends Stagerf {
 
         punkte = punkte + 1;
         var p = document.createElement('div');
-        p.innerHTML = "Punkte:" +punkte;
+        p.innerHTML = "Punkte: " +punkte;
         stage9r.appendChild(p);
 
 
@@ -1317,7 +1317,7 @@ class Richtig10 extends Stagerf {
 
         punkte = punkte + 1;
         var p = document.createElement('div');
-        p.innerHTML = "Punkte:" +punkte;
+        p.innerHTML = "Punkte: " +punkte;
         stage10r.appendChild(p);
 
 
@@ -1450,7 +1450,7 @@ class Richtig11 extends Stagerf {
 
         punkte = punkte + 1;
         var p = document.createElement('div');
-        p.innerHTML = "Punkte:" +punkte;
+        p.innerHTML = "Punkte: " +punkte;
         stage11r.appendChild(p);
 
 
@@ -1517,7 +1517,7 @@ class Falsch11 extends Stagerf {
 // Level 12 Textilbranche
 class Twelvestage extends Stage {
     constructor() {
-        super("Level 12", "url('Bilder/hintergrund.PNG')")
+        super("Level 12", "url('Bilder/hintergrund.jpg')")
     }
     getContent() {
         var stage12 = document.createElement('div');
@@ -1581,6 +1581,11 @@ class Richtig12 extends Stagerf {
     getContent() {
         var stage12r = document.createElement('div');
 
+        punkte = punkte + 1;
+        var p = document.createElement('div');
+        p.innerHTML = "Punkte: " +punkte;
+        stage12r.appendChild(p);
+
         //Button für weiter
         var buttona = document.createElement('button');
         buttona.innerHTML = "weiter";
@@ -1601,7 +1606,7 @@ class Richtig12 extends Stagerf {
 
         //Funktion des Buttons
         buttona.onclick = function() {
-            level12.drawStage();
+            endstage.drawStage();
         }
         return stage12r;
     }
@@ -1636,7 +1641,7 @@ class Falsch12 extends Stagerf {
 
         //Funktion des Buttons
         buttona.onclick = function() {
-            level12.drawStage();
+            endstage.drawStage();
         }
         return stage12f;
     }
@@ -1647,10 +1652,68 @@ class Falsch12 extends Stagerf {
 
 class Endstage extends Stage {
     constructor() {
-        super("Level11", "url('Bilder/hintergrund.jpg')")
+        super("Ende", "url('Bilder/hintergrund.jpg')")
     }
     getContent() {
         var endstage = document.createElement('div');
+
+        var text = document.createElement('div');
+        text.innerHTML ="Herzlichen Glückwunsch";
+        endstage.appendChild(text);
+        text.id = "text";
+
+        var pu = document.createElement('div');
+        pu.innerHTML = "Punkte: " +punkte;
+        endstage.appendChild(pu);
+        pu.id = "pu";
+
+        var punktetext = document.createElement('div');
+        if (punkte == 0) {
+          punktetext.innerHTML = "Schlecht";
+          endstage.appendChild(punktetext);
+        } else if (punkte == 1) {
+          punktetext.innerHTML = "Oh";
+          endstage.appendChild(punktetext);
+        } else if (punkte == 2) {
+          punktetext.innerHTML = "Hm";
+          endstage.appendChild(punktetext);
+        } else if (punkte == 3) {
+          punktetext.innerHTML = "Naja";
+          endstage.appendChild(punktetext);
+        } else if (punkte == 4) {
+          punktetext.innerHTML = "Könnte besser sein";
+          endstage.appendChild(punktetext);
+        } else if (punkte == 5) {
+          punktetext.innerHTML = "Nicht so gut";
+          endstage.appendChild(punktetext);
+        } else if (punkte == 6) {
+          punktetext.innerHTML = "Mittel gut";
+          endstage.appendChild(punktetext);
+        } else if (punkte == 7) {
+          punktetext.innerHTML = "Fast gut";
+          endstage.appendChild(punktetext);
+        } else if (punkte == 8) {
+          punktetext.innerHTML = "gut";
+          endstage.appendChild(punktetext);
+        } else if (punkte == 9) {
+          punktetext.innerHTML = "Toll";
+          endstage.appendChild(punktetext);
+        } else if (punkte == 10) {
+          punktetext.innerHTML = "Super";
+          endstage.appendChild(punktetext);
+        } else if (punkte == 11) {
+          punktetext.innerHTML = "Super toll";
+          endstage.appendChild(punktetext);
+        } else if (punkte == 12) {
+          punktetext.innerHTML = "Wow";
+          endstage.appendChild(punktetext);
+        } else {
+          punktetext.innerHTML = "";
+          endstage.appendChild(punktetext);
+        }
+        punktetext.id = "punktetext";
+
+        return endstage;
     }
 }
 
