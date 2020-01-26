@@ -1273,19 +1273,19 @@ class Tenthstage extends Stage {
 
         //erster Button
         var button = document.createElement('button');
-        button.innerHTML = "falsch";
+        button.innerHTML = "Blitzeinschlag";
         stage10.appendChild(button);
         button.id = "b1";
 
         //zweiter Button
         var button2 = document.createElement('button');
-        button2.innerHTML = "falsch";
+        button2.innerHTML = "Hitzeperioden";
         stage10.appendChild(button2);
         button2.id = "b2";
 
         //dritter Button
         var button3 = document.createElement('button')
-        button3.innerHTML = "richtig";
+        button3.innerHTML = "Brandstiftung";
         stage10.appendChild(button3);
         button3.id = "b3";
 
@@ -1303,7 +1303,7 @@ class Tenthstage extends Stage {
 
         //Fragestellung
         var text = document.createElement('div');
-        text.innerHTML ="Frage?";
+        text.innerHTML ="Was ist die meiste/häufigste Ursache von Waldbränden?";
         stage10.appendChild(text);
         text.id = "text";
 
@@ -1345,7 +1345,7 @@ class Richtig10 extends Stagerf {
 
         //Lösungstext
         var loesung = document.createElement('div');
-        loesung.innerHTML ="Lösungstext";
+        loesung.innerHTML ="Brandstiftung ist die häufigste Waldbrand Ursache. Ein großer Teil der Waldbrände ist auf Brandstiftung und leichtsinniges Verhalten zurückzuführen";
         stage10r.appendChild(loesung);
         loesung.id = "loesung";
 
@@ -1379,7 +1379,7 @@ class Falsch10 extends Stagerf {
 
         //Lösungstext
         var loesung = document.createElement('div');
-        loesung.innerHTML ="Lösungstext";
+        loesung.innerHTML ="Brandstiftung ist die häufigste Waldbrand Ursache. Ein großer Teil der Waldbrände ist auf Brandstiftung und leichtsinniges Verhalten zurückzuführen";
         stage10f.appendChild(loesung);
         loesung.id = "loesung";
 
