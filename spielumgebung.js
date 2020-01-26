@@ -1646,7 +1646,7 @@ class Falsch12 extends Stagerf {
 
         //Lösungstext
         var loesung = document.createElement('div');
-        loesung.innerHTML ="Lösungstext";
+        loesung.innerHTML ="1,2 Milliarden Tonnen CO2 pro Jahr, mehr als internationaler Flug- und Schiffsverkehr zusammen.";
         stage12f.appendChild(loesung);
         loesung.id = "loesung";
 
