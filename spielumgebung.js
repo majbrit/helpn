@@ -229,7 +229,7 @@ class Secoundstage extends Stage {
         }
 
         //Geräusche
-        var audio = new Audio('G/Schiff.mp3');
+        var audio = new Audio('G/kuh_muh.mp3');
         audio.play();
         stage2.appendChild(audio);
 
@@ -498,7 +498,7 @@ class Forthstage extends Stage {
         }
 
         //Geräusche
-        var audio = new Audio('G/Frosch2.mp3');
+        var audio = new Audio('G/biene.mp3');
         audio.play();
         stage4.appendChild(audio);
 
@@ -591,7 +591,7 @@ class Fifthstage extends Stage {
 
         //Bild
         var image = document.createElement("IMG");
-        image.src = "Bilder/wal.png.gif";
+        image.src = "Bilder/wal.gif";
         stage5.appendChild(image);
         image.id="image";
 
@@ -865,7 +865,7 @@ class Seventhstage extends Stage {
 
         //Bild
         var image = document.createElement("IMG");
-        image.src = "Bilder/icon.png";
+        image.src = "Bilder/robbe.gif";
         stage7.appendChild(image);
         image.id="image";
 
@@ -906,7 +906,7 @@ class Seventhstage extends Stage {
         text.id = "text";
 
         //Geräusche
-        var audio = new Audio('G/Meer.mp3');
+        var audio = new Audio('G/Schiff.mp3');
         audio.play();
         stage7.appendChild(audio);
 
@@ -1133,7 +1133,7 @@ class Ninthstage extends Stage {
 
         //Bild
         var image = document.createElement("IMG");
-        image.src = "Bilder/Icon.png";
+        image.src = "Bilder/feuer.gif";
         stage9.appendChild(image);
         image.id="image";
 
@@ -1174,7 +1174,7 @@ class Ninthstage extends Stage {
         text.id = "text";
 
         //Geräusche
-        var audio = new Audio('G/frosch.mp3');
+        var audio = new Audio('G/feuer.mp3');
         audio.play();
         stage9.appendChild(audio);
 
@@ -1308,7 +1308,7 @@ class Tenthstage extends Stage {
         text.id = "text";
 
         //Geräusche
-        var audio = new Audio('G/Katze.mp3');
+        var audio = new Audio('G/feuer.mp3');
         audio.play();
         stage10.appendChild(audio);
 
@@ -1442,7 +1442,7 @@ class Eleventhstage extends Stage {
         text.id = "text";
 
         //Geräusche
-        var audio = new Audio('G/Katze.mp3');
+        var audio = new Audio('G/feuer.mp3');
         audio.play();
         stage11.appendChild(audio);
 
@@ -1576,7 +1576,7 @@ class Twelvestage extends Stage {
         text.id = "text";
 
         //Geräusche
-        var audio = new Audio('G/Katze.mp3');
+        var audio = new Audio('G/nähen.mp3');
         audio.play();
         stage12.appendChild(audio);
 
@@ -1670,7 +1670,7 @@ class Endstage extends Stage {
         var endstage = document.createElement('div');
 
         var text = document.createElement('div');
-        text.innerHTML ="Herzlichen Glückwunsch";
+        text.innerHTML ="Wie viel Umweltschutz steckt in dir?";
         endstage.appendChild(text);
         text.id = "text";
 
@@ -1681,43 +1681,43 @@ class Endstage extends Stage {
 
         var punktetext = document.createElement('div');
         if (punkte == 0) {
-          punktetext.innerHTML = "Schlecht";
+          punktetext.innerHTML = "Wie schade! Leider mangelt es bei dir noch an Wissen über dem Klimaschutz und der Umwelt.                                    Versuche dich aufjedenfall über dieses Thema zu erkundigen,                                                                                           denn jeder einzelne kann einen großen beitrag zum Umwelt- und Klimaschutz beitragen.";
           endstage.appendChild(punktetext);
         } else if (punkte == 1) {
-          punktetext.innerHTML = "Oh";
+          punktetext.innerHTML = "Wie schade! Leider mangelt es bei dir noch an Wissen über dem Klimaschutz und der Umwelt. Versuche dich aufjedenfall über dieses Thema zu erkundigen,                                                                                          denn jeder einzelne kann einen großen beitrag zum Umwelt- und Klimaschutz beitragen.";
           endstage.appendChild(punktetext);
         } else if (punkte == 2) {
-          punktetext.innerHTML = "Hm";
+          punktetext.innerHTML = "Wie schade! Leider mangelt es bei dir noch an Wissen über dem Klimaschutz und der Umwelt.                                     Versuche dich aufjedenfall über dieses Thema zu erkundigen,                                                                                           denn jeder einzelne kann einen großen beitrag zum Umwelt- und Klimaschutz beitragen.";
           endstage.appendChild(punktetext);
         } else if (punkte == 3) {
-          punktetext.innerHTML = "Naja";
+          punktetext.innerHTML = "Wie schade! Leider mangelt es bei dir noch an Wissen über dem Klimaschutz und der Umwelt.                                   Versuche dich aufjedenfall über dieses Thema zu erkundigen,                                                                                           denn jeder einzelne kann einen großen beitrag zum Umwelt- und Klimaschutz beitragen.";
           endstage.appendChild(punktetext);
         } else if (punkte == 4) {
-          punktetext.innerHTML = "Könnte besser sein";
+          punktetext.innerHTML = "Gratuliere, du hast die Quiz-Fragen teilweise richtig beantwortet, doch was zum Vorschein kommt                               sind die Wissenslücken, die umbedingt durch weitere Informationen über den Klimaschutz gefüllt werden müssen.                                           Es schadet nicht sich Wissen anzueignen.";
           endstage.appendChild(punktetext);
         } else if (punkte == 5) {
-          punktetext.innerHTML = "Nicht so gut";
+          punktetext.innerHTML = "Gratuliere, du hast die Quiz-Fragen teilweise richtig beantwortet, doch was zum Vorschein kommt                                    sind die Wissenslücken, die umbedingt durch weitere Informationen über den Klimaschutz gefüllt werden müssen.                                            Es schadet nicht sich Wissen anzueignen.";
           endstage.appendChild(punktetext);
         } else if (punkte == 6) {
-          punktetext.innerHTML = "Mittel gut";
+          punktetext.innerHTML = "Gratuliere, du hast die Quiz-Fragen teilweise richtig beantwortet, doch was zum Vorschein kommt                                  sind die Wissenslücken, die umbedingt durch weitere Informationen über den Klimaschutz gefüllt werden müssen.                                            Es schadet nicht sich Wissen anzueignen.";
           endstage.appendChild(punktetext);
         } else if (punkte == 7) {
-          punktetext.innerHTML = "Fast gut";
+          punktetext.innerHTML = "WOW! Du kennst dich sehr gut mit dem Thema Umweltschutz aus, aber da sind noch einige Lücken,                                      die man mit weiteren Wissen füllen könnte. Weiter so!";
           endstage.appendChild(punktetext);
         } else if (punkte == 8) {
-          punktetext.innerHTML = "gut";
+          punktetext.innerHTML = "WOW! Du kennst dich sehr gut mit dem Thema Umweltschutz aus, aber da sind noch einige Lücken,                                      die man mit weiteren Wissen füllen könnte. Weiter so!";
           endstage.appendChild(punktetext);
         } else if (punkte == 9) {
-          punktetext.innerHTML = "Toll";
+          punktetext.innerHTML = "WOW! Du kennst dich sehr gut mit dem Thema Umweltschutz aus, aber da sind noch einige Lücken,                                  die man mit weiteren Wissen füllen könnte. Weiter so!";
           endstage.appendChild(punktetext);
         } else if (punkte == 10) {
-          punktetext.innerHTML = "Super";
+          punktetext.innerHTML = "Power-Aktivist/-in! In Sachen Umweltschutz macht dir niemand etwas vor.                                                         Du kennst dich schon super aus und lernst täglich dazu. Tausche dich mit Familie und Freunden aus und überlegt gemeinsam,                                  wie man die Umwelt besser schützen könnte.";
           endstage.appendChild(punktetext);
         } else if (punkte == 11) {
-          punktetext.innerHTML = "Super toll";
+          punktetext.innerHTML = "Power-Aktivist/-in! In Sachen Umweltschutz macht dir niemand etwas vor.                                                          Du kennst dich schon super aus und lernst täglich dazu. Tausche dich mit Familie und Freunden aus und überlegt gemeinsam,                                  wie man die Umwelt besser schützen könnte.";
           endstage.appendChild(punktetext);
         } else if (punkte == 12) {
-          punktetext.innerHTML = "Wow";
+          punktetext.innerHTML = "Power-Aktivist/-in! In Sachen Umweltschutz macht dir niemand etwas vor. Du kennst dich schon super aus und lernst täglich dazu. Tausche dich mit Familie und Freunden aus und überlegt gemeinsam,                              wie man die Umwelt besser schützen könnte.";
           endstage.appendChild(punktetext);
         } else {
           punktetext.innerHTML = "Fehler";
