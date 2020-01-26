@@ -1,12 +1,54 @@
-/* Style fuer Credits.html und Anleitung.html*/
+/* CSS für die Anleitung und Credits */
 
 
 /*CREDITS Credits.html */
 
-#header2 {
-  align-self: center;
-  margin-left: 60px;
-} /*Ueberschrift */
+#body {
+  display: flex;
+  flex-direction: column;
+  background-color: #041E27;
+  background-size: 100%;
+} /*Hintergrund */
+
+#credits {
+  text-align: center; margin-left:45%;
+  font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+  height: 650px;
+  width: 650px;
+  display:flex;
+  align-self: flex-end;
+} /*Credits Abspann */
+
+#zurueck {
+  border: 2px solid #ffff00;
+  margin-left: 75%;
+    
+  /* Schriftfarbe ändern */
+  color: #0080ff;
+    
+  /* Hintergrundfarbe */
+  background-color: #ffff00;
+    
+  /* Ecken des Rahmen sollen abgerundet werden */
+  border-radius: 10px;
+    
+  /* Schriftart */
+  font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+    
+  /* Breite und Höhe definieren */
+  height: 40px;
+  width: 260px;
+    
+  position: absolute;
+} /*Zurueck Button */
+
+/* Um die Hintergrundfarbe zu ändern neue Klasse öffnen hover*/
+#zurueck:hover {
+    background-color: #bf00ff;
+}
+
+
+/* ANLEITUNG Anleitung.html */
 
 #body2 {
   display: flex;
@@ -15,65 +57,30 @@
   background-size: 100%;
 } /*Hintergrund */
 
-#credits {
-  text-align: center; margin-left:35%
-  font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
-  height: 500px;
-  width:500px;
-  display:flex;
-  align-self: flex-end;
-} /*Credits Abspann */
-
-#zurueck {
-  margin-right: 350px;
-  margin-top:430px; border-radius: 0.4em;
-  background-color: #9c7b8c;
-  border: 1px solid #022939;
-  font-family: "Century Gothic", CenturyGothic; Geneva, AppleGothic, sans-serif;
-  height: 40px;
-  width: 60px;
-} /*Zurueck Button */
-
-#zurueck:hover {
-  background-color: #b3738c;
-}
-
-
-#anleitung {
-  width: 580px;
-  height: 548px;
-  background-image: url(Bilder/Anleitung.png);
-  align-self: center;
-  font-size: 2em;
-  color: aliceblue;
-  display. flex;
-}
-
-
-/* ANLEITUNG Anleitung.html */
-
-#header3 {
-  align-self: center;
-  margin-left:0px;
-} /*Ueberschrift */
-
-#body3 {
-  display: flex;
-  flex-direction: column;
-  background-color: #041E27;
-  background-size: 100%;
-} /*Hintergrund */
-
 #zrk {
-  margin-left: 425px;
-  margin-top: 470px; border-radius: 0.4em;
-  background-color: #9c7b8c;
-  border: 1px solid #022939;
-  font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
-  height: 40px;
-  width:60px;
-} /*Zurueck Button */
+    border: 2px solid #ffff00;
+    margin-left: 75%;
+        
+    /* Schriftfarbe ändern */
+    color: #0080ff;
+    
+    /* Hintergrundarbe */
+    background-color: #ffff00;
+    
+    /* Ecken des Rahmen sollen abgerundet werden */
+    border-radius: 10px;
+    
+    /* Schriftart */
+    font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+    
+    /* Breite und Höhe definieren */
+    height: 40px;
+    width: 260px;
+    
+    position: absolute;
+} /* zrk Button */
 
+ /* Um die Hintergrundfarbe zu ändern neue Klasse öffnen hover */
 #zrk:hover {
   background-color: #b3738c;
 }
