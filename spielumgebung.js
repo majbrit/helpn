@@ -1681,34 +1681,34 @@ class Endstage extends Stage {
 
         var punktetext = document.createElement('div');
         if (punkte == 0) {
-          punktetext.innerHTML = "Wie schade! Leider mangelt es bei dir noch an Wissen über dem Klimaschutz und der Umwelt.  Versuche dich aufjedenfall über dieses Thema zu erkundigen, denn jeder einzelne kann einen großen beitrag zum Umwelt- und Klimaschutz beitragen.";
+          punktetext.innerHTML = "Wie schade! Leider mangelt es bei dir noch an Wissen über den Klimaschutz und der Umwelt.  Versuche dich auf jeden Fall über dieses Thema zu erkundigen, denn jeder einzelne kann einen großen Beitrag zum Umwelt- und Klimaschutz beitragen.";
           endstage.appendChild(punktetext);
         } else if (punkte == 1) {
-          punktetext.innerHTML = "Wie schade! Leider mangelt es bei dir noch an Wissen über dem Klimaschutz und der Umwelt. Versuche dich aufjedenfall über dieses Thema zu erkundigen, denn jeder einzelne kann einen großen beitrag zum Umwelt- und Klimaschutz beitragen.";
+          punktetext.innerHTML = "Wie schade! Leider mangelt es bei dir noch an Wissen über den Klimaschutz und der Umwelt. Versuche dich auf jeden Fall über dieses Thema zu erkundigen, denn jeder einzelne kann einen großen Beitrag zum Umwelt- und Klimaschutz beitragen.";
           endstage.appendChild(punktetext);
         } else if (punkte == 2) {
-          punktetext.innerHTML = "Wie schade! Leider mangelt es bei dir noch an Wissen über dem Klimaschutz und der Umwelt. Versuche dich aufjedenfall über dieses Thema zu erkundigen, denn jeder einzelne kann einen großen beitrag zum Umwelt- und Klimaschutz beitragen.";
+          punktetext.innerHTML = "Wie schade! Leider mangelt es bei dir noch an Wissen über den Klimaschutz und der Umwelt. Versuche dich auf jeden Fall über dieses Thema zu erkundigen, denn jeder einzelne kann einen großen Beitrag zum Umwelt- und Klimaschutz beitragen.";
           endstage.appendChild(punktetext);
         } else if (punkte == 3) {
-          punktetext.innerHTML = "Wie schade! Leider mangelt es bei dir noch an Wissen über dem Klimaschutz und der Umwelt.  Versuche dich aufjedenfall über dieses Thema zu erkundigen, denn jeder einzelne kann einen großen beitrag zum Umwelt- und Klimaschutz beitragen.";
+          punktetext.innerHTML = "Wie schade! Leider mangelt es bei dir noch an Wissen über den Klimaschutz und der Umwelt.  Versuche dich auf jeden Fall über dieses Thema zu erkundigen, denn jeder einzelne kann einen großen Beitrag zum Umwelt- und Klimaschutz beitragen.";
           endstage.appendChild(punktetext);
         } else if (punkte == 4) {
-          punktetext.innerHTML = "Gratuliere, du hast die Quiz-Fragen teilweise richtig beantwortet, doch was zum Vorschein kommt sind die Wissenslücken, die umbedingt durch weitere Informationen über den Klimaschutz gefüllt werden müssen. Es schadet nicht sich Wissen anzueignen.";
+          punktetext.innerHTML = "Gratuliere, du hast die Quiz-Fragen teilweise richtig beantwortet, doch, was zum Vorschein kommt, sind die Wissenslücken, die umbedingt durch weitere Informationen über den Klimaschutz gefüllt werden müssen. Es schadet nicht, sich Wissen anzueignen.";
           endstage.appendChild(punktetext);
         } else if (punkte == 5) {
-          punktetext.innerHTML = "Gratuliere, du hast die Quiz-Fragen teilweise richtig beantwortet, doch was zum Vorschein kommt sind die Wissenslücken, die umbedingt durch weitere Informationen über den Klimaschutz gefüllt werden müssen. Es schadet nicht sich Wissen anzueignen.";
+          punktetext.innerHTML = "Gratuliere, du hast die Quiz-Fragen teilweise richtig beantwortet, doch, was zum Vorschein kommt, sind die Wissenslücken, die umbedingt durch weitere Informationen über den Klimaschutz gefüllt werden müssen. Es schadet nicht, sich Wissen anzueignen.";
           endstage.appendChild(punktetext);
         } else if (punkte == 6) {
-          punktetext.innerHTML = "Gratuliere, du hast die Quiz-Fragen teilweise richtig beantwortet, doch was zum Vorschein kommt  sind die Wissenslücken, die umbedingt durch weitere Informationen über den Klimaschutz gefüllt werden müssen. Es schadet nicht sich Wissen anzueignen.";
+          punktetext.innerHTML = "Gratuliere, du hast die Quiz-Fragen teilweise richtig beantwortet, doch, was zum Vorschein kommt, sind die Wissenslücken, die umbedingt durch weitere Informationen über den Klimaschutz gefüllt werden müssen. Es schadet nicht, sich Wissen anzueignen.";
           endstage.appendChild(punktetext);
         } else if (punkte == 7) {
-          punktetext.innerHTML = "WOW! Du kennst dich sehr gut mit dem Thema Umweltschutz aus, aber da sind noch einige Lücken, die man mit weiteren Wissen füllen könnte. Weiter so!";
+          punktetext.innerHTML = "WOW! Du kennst dich sehr gut mit dem Thema Umweltschutz aus, aber da sind noch einige Lücken, die man mit weiterem Wissen füllen könnte. Weiter so!";
           endstage.appendChild(punktetext);
         } else if (punkte == 8) {
-          punktetext.innerHTML = "WOW! Du kennst dich sehr gut mit dem Thema Umweltschutz aus, aber da sind noch einige Lücken, die man mit weiteren Wissen füllen könnte. Weiter so!";
+          punktetext.innerHTML = "WOW! Du kennst dich sehr gut mit dem Thema Umweltschutz aus, aber da sind noch einige Lücken, die man mit weiterem Wissen füllen könnte. Weiter so!";
           endstage.appendChild(punktetext);
         } else if (punkte == 9) {
-          punktetext.innerHTML = "WOW! Du kennst dich sehr gut mit dem Thema Umweltschutz aus, aber da sind noch einige Lücken, die man mit weiteren Wissen füllen könnte. Weiter so!";
+          punktetext.innerHTML = "WOW! Du kennst dich sehr gut mit dem Thema Umweltschutz aus, aber da sind noch einige Lücken, die man mit weiterem Wissen füllen könnte. Weiter so!";
           endstage.appendChild(punktetext);
         } else if (punkte == 10) {
           punktetext.innerHTML = "Power-Aktivist/-in! In Sachen Umweltschutz macht dir niemand etwas vor. Du kennst dich schon super aus und lernst täglich dazu. Tausche dich mit Familie und Freunden aus und überlegt gemeinsam, wie man die Umwelt besser schützen könnte.";
