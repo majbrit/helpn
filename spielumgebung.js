@@ -148,6 +148,12 @@ class Falsch1 extends Stagerf {
     getContent() {
         var stage1f = document.createElement('div');
 
+        //Punkte
+        var p = document.createElement('div');
+        p.innerHTML = "Punkte: " +punkte;
+        stage1f.appendChild(p);
+        p.id = "punkte";
+
         //Button für weiter
         var buttona = document.createElement('button');
         buttona.innerHTML = "weiter";
@@ -286,6 +292,12 @@ class Falsch2 extends Stagerf {
     getContent() {
         var stage2f = document.createElement('div');
 
+        //Punkte
+        var p = document.createElement('div');
+        p.innerHTML = "Punkte: " +punkte;
+        stage2f.appendChild(p);
+        p.id = "punkte";
+
         //Button für weiter
         var buttona = document.createElement('button');
         buttona.innerHTML = "weiter";
@@ -421,6 +433,12 @@ class Falsch3 extends Stagerf {
     getContent() {
         var stage3f = document.createElement('div');
 
+        //Punkte
+        var p = document.createElement('div');
+        p.innerHTML = "Punkte: " +punkte;
+        stage3f.appendChild(p);
+        p.id = "punkte";
+
         //Button für weiter
         var buttona = document.createElement('button');
         buttona.innerHTML = "weiter";
@@ -554,6 +572,12 @@ class Falsch4 extends Stagerf {
     }
     getContent() {
         var stage4f = document.createElement('div');
+
+        //Punkte
+        var p = document.createElement('div');
+        p.innerHTML = "Punkte: " +punkte;
+        stage4f.appendChild(p);
+        p.id = "punkte";
 
         //Button für weiter
         var buttona = document.createElement('button');
@@ -697,6 +721,12 @@ class Falsch5 extends Stagerf {
     getContent() {
         var stage5f = document.createElement('div');
 
+        //Punkte
+        var p = document.createElement('div');
+        p.innerHTML = "Punkte: " +punkte;
+        stage5f.appendChild(p);
+        p.id = "punkte";
+
         //Button für weiter
         var buttona = document.createElement('button');
         buttona.innerHTML = "weiter";
@@ -831,6 +861,12 @@ class Falsch6 extends Stagerf {
     getContent() {
         var stage6f = document.createElement('div');
 
+        //Punkte
+        var p = document.createElement('div');
+        p.innerHTML = "Punkte: " +punkte;
+        stage6f.appendChild(p);
+        p.id = "punkte";
+
         var buttona = document.createElement('button');
         buttona.innerHTML = "weiter";
        stage6f.appendChild(buttona);
@@ -962,6 +998,12 @@ class Falsch7 extends Stagerf {
     }
     getContent() {
         var stage7f = document.createElement('div');
+
+        //Punkte
+        var p = document.createElement('div');
+        p.innerHTML = "Punkte: " +punkte;
+        stage7f.appendChild(p);
+        p.id = "punkte";
 
         //Button für weiter
         var buttona = document.createElement('button');
@@ -1097,6 +1139,12 @@ class Falsch8 extends Stagerf {
     getContent() {
         var stage8f = document.createElement('div');
 
+        //Punkte
+        var p = document.createElement('div');
+        p.innerHTML = "Punkte: " +punkte;
+        stage8f.appendChild(p);
+        p.id = "punkte";
+
         //Button für weiter
         var buttona = document.createElement('button');
         buttona.innerHTML = "weiter";
@@ -1230,6 +1278,12 @@ class Falsch9 extends Stagerf {
     }
     getContent() {
         var stage9f = document.createElement('div');
+
+        //Punkte
+        var p = document.createElement('div');
+        p.innerHTML = "Punkte: " +punkte;
+        stage9f.appendChild(p);
+        p.id = "punkte";
 
         //Button für weiter
         var buttona = document.createElement('button');
@@ -1365,6 +1419,12 @@ class Falsch10 extends Stagerf {
     getContent() {
         var stage10f = document.createElement('div');
 
+        //Punkte
+        var p = document.createElement('div');
+        p.innerHTML = "Punkte: " +punkte;
+        stage10f.appendChild(p);
+        p.id = "punkte";
+
         //Button für weiter
         var buttona = document.createElement('button');
         buttona.innerHTML = "weiter";
@@ -1499,6 +1559,12 @@ class Falsch11 extends Stagerf {
     getContent() {
         var stage11f = document.createElement('div');
 
+        //Punkte
+        var p = document.createElement('div');
+        p.innerHTML = "Punkte: " +punkte;
+        stage11f.appendChild(p);
+        p.id = "punkte";
+
         //Button für weiter
         var buttona = document.createElement('button');
         buttona.innerHTML = "weiter";
@@ -1631,6 +1697,12 @@ class Falsch12 extends Stagerf {
     }
     getContent() {
         var stage12f = document.createElement('div');
+
+        //Punkte
+        var p = document.createElement('div');
+        p.innerHTML = "Punkte: " +punkte;
+        stage12f.appendChild(p);
+        p.id = "punkte";
 
         //Button für weiter
         var buttona = document.createElement('button');

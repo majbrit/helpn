@@ -178,4 +178,9 @@
 
 #punkte {
   color: white;
+  font-size: 30px;
+  font-weight: bold;
+  position: absolute;
+  left: 2%;
+  top: 2%;
 }
