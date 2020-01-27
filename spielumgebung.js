@@ -2,7 +2,9 @@
 // Scores
 var punkte = 0;
 var audiofalsch = new Audio('G/falsch.mp3');
-audiofalsch.volume = "0.2";
+audiofalsch.volume = "0.1";
+var audiorichtig = new Audio('G/richtig.mp3');
+audiorichtig.volume = "0.1";
 
 
 //Klasse für alle Level
@@ -79,6 +81,7 @@ class Firststage extends Stage {
             falsch1.drawStage()
         }
         button2.onclick = function() {
+            audiorichtig.play();
             richtig1.drawStage()
         }
         button3.onclick = function()
@@ -228,6 +231,7 @@ class Secoundstage extends Stage {
 
         //Funktionen der Button
         button.onclick = function() {
+            audiorichtig.play();
             richtig2.drawStage()
         }
         button2.onclick = function() {
@@ -371,6 +375,7 @@ class Thirdstage extends Stage {
 
         //Funktionen der Button
         button.onclick = function() {
+            audiorichtig.play();
             richtig3.drawStage()
         }
         button2.onclick = function() {
@@ -522,6 +527,7 @@ class Forthstage extends Stage {
         }
         button3.onclick = function()
         {
+            audiorichtig.play();
             richtig4.drawStage()
         }
 
@@ -663,6 +669,7 @@ class Fifthstage extends Stage {
 
        //Funktionen der Button
         button.onclick = function() {
+            audiorichtig.play();
             richtig5.drawStage()
         }
         button2.onclick = function() {
@@ -808,6 +815,7 @@ class Sixthstage extends Stage {
         }
         button3.onclick = function()
         {
+            audiorichtig.play();
             richtig6.drawStage()
         }
 
@@ -943,6 +951,7 @@ class Seventhstage extends Stage {
             falsch7.drawStage()
         }
         button2.onclick = function() {
+            audiorichtig.play();
             richtig7.drawStage()
         }
         button3.onclick = function()
@@ -1085,6 +1094,7 @@ class Eighthstage extends Stage {
             falsch8.drawStage()
         }
         button2.onclick = function() {
+            audiorichtig.play();
             richtig8.drawStage()
         }
         button3.onclick = function()
@@ -1223,6 +1233,7 @@ class Ninthstage extends Stage {
 
         //Funktionen der Button
         button.onclick = function() {
+            audiorichtig.play();
             richtig9.drawStage()
         }
         button2.onclick = function() {
@@ -1374,6 +1385,7 @@ class Tenthstage extends Stage {
         }
         button3.onclick = function()
         {
+            audiorichtig.play();
             richtig10.drawStage()
         }
 
@@ -1511,6 +1523,7 @@ class Eleventhstage extends Stage {
             falsch11.drawStage()
         }
         button2.onclick = function() {
+            audiorichtig.play();
             richtig11.drawStage()
         }
         button3.onclick = function()
@@ -1653,6 +1666,7 @@ class Twelvestage extends Stage {
             falsch12.drawStage()
         }
         button2.onclick = function() {
+            audiorichtig.play();
             richtig12.drawStage()
         }
         button3.onclick = function()
