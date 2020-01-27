@@ -871,19 +871,19 @@ class Seventhstage extends Stage {
 
         //erster Button
         var button = document.createElement('button');
-        button.innerHTML = "22.000";
+        button.innerHTML = "falsch";
         stage7.appendChild(button);
         button.id = "b1";
 
         //zweiter Button
         var button2 = document.createElement('button');
-        button2.innerHTML = "26.000";
+        button2.innerHTML = "richtig";
         stage7.appendChild(button2);
         button2.id = "b2";
 
         //dritter Button
         var button3 = document.createElement('button')
-        button3.innerHTML = "18.000";
+        button3.innerHTML = "falsch";
         stage7.appendChild(button3);
         button3.id = "b3";
 
@@ -901,7 +901,7 @@ class Seventhstage extends Stage {
 
         //Fragestellung
         var text = document.createElement('div');
-        text.innerHTML ="Wie viele Robben starben im Jahr 2016 aufgrund Überfischung?";
+        text.innerHTML ="Frage?";
         stage7.appendChild(text);
         text.id = "text";
 
@@ -943,7 +943,7 @@ class Richtig7 extends Stagerf {
 
         //Lösungstext
         var loesung = document.createElement('div');
-        loesung.innerHTML ="2016 starben ungefähr 26.000 Robben, da sie aufgrund der Überfischung hungerten.";
+        loesung.innerHTML ="Lösungstext";
         stage7r.appendChild(loesung);
         loesung.id = "loesung";
 
@@ -977,7 +977,7 @@ class Falsch7 extends Stagerf {
 
         //Lösungstext
         var loesung = document.createElement('div');
-        loesung.innerHTML ="2016 starben ungefähr 26.000 Robben, da sie aufgrund der Überfischung hungerten.";
+        loesung.innerHTML ="Lösungstext";
         stage7f.appendChild(loesung);
         loesung.id = "loesung";
 
@@ -1139,19 +1139,19 @@ class Ninthstage extends Stage {
 
         //erster Button
         var button = document.createElement('button');
-        button.innerHTML = "Kohlendioxid Ausstoß";
+        button.innerHTML = "richtig";
         stage9.appendChild(button);
         button.id = "b1";
 
         //zweiter Button
         var button2 = document.createElement('button');
-        button2.innerHTML = "Kohlenmonoxid Ausstoß";
+        button2.innerHTML = "falsch";
         stage9.appendChild(button2);
         button2.id = "b2";
 
         //dritter Button
         var button3 = document.createElement('button')
-        button3.innerHTML = "Kohlenstoffdioxid Ausstoß";
+        button3.innerHTML = "falsch";
         stage9.appendChild(button3);
         button3.id = "b3";
 
@@ -1169,7 +1169,7 @@ class Ninthstage extends Stage {
 
         //Fragestellung
         var text = document.createElement('div');
-        text.innerHTML ="Pro Jahr werden ca. 30 Millionen Hektar des Regenwaldes abgeholzt. Welche Folgen hat dies?";
+        text.innerHTML ="Frage?";
         stage9.appendChild(text);
         text.id = "text";
 
@@ -1211,7 +1211,7 @@ class Richtig9 extends Stagerf {
 
         //Lösungstext
         var loesung = document.createElement('div');
-        loesung.innerHTML ="Die Abholzung der Wälder macht ungefähr 15% des weltweiten Ausstoßes von Kohlendioxid aus, welches zur globalen Erwärmung beiträgt.";
+        loesung.innerHTML ="Lösungstext";
         stage9r.appendChild(loesung);
         loesung.id = "loesung";
 
@@ -1245,7 +1245,7 @@ class Falsch9 extends Stagerf {
 
         //Lösungstext
         var loesung = document.createElement('div');
-        loesung.innerHTML ="Die Abholzung der Wälder macht ungefähr 15% des weltweiten Ausstoßes von Kohlendioxid aus, welches zur globalen Erwärmung beiträgt.";
+        loesung.innerHTML ="Lösungstext";
         stage9f.appendChild(loesung);
         loesung.id = "loesung";
 
@@ -1273,19 +1273,19 @@ class Tenthstage extends Stage {
 
         //erster Button
         var button = document.createElement('button');
-        button.innerHTML = "falsch";
+        button.innerHTML = "Blitzeinschlag";
         stage10.appendChild(button);
         button.id = "b1";
 
         //zweiter Button
         var button2 = document.createElement('button');
-        button2.innerHTML = "falsch";
+        button2.innerHTML = "Hitzeperioden";
         stage10.appendChild(button2);
         button2.id = "b2";
 
         //dritter Button
         var button3 = document.createElement('button')
-        button3.innerHTML = "richtig";
+        button3.innerHTML = "Brandstiftung";
         stage10.appendChild(button3);
         button3.id = "b3";
 
@@ -1303,7 +1303,7 @@ class Tenthstage extends Stage {
 
         //Fragestellung
         var text = document.createElement('div');
-        text.innerHTML ="Frage?";
+        text.innerHTML ="Was ist die meiste/häufigste Ursache von Waldbränden?";
         stage10.appendChild(text);
         text.id = "text";
 
@@ -1345,7 +1345,7 @@ class Richtig10 extends Stagerf {
 
         //Lösungstext
         var loesung = document.createElement('div');
-        loesung.innerHTML ="Lösungstext";
+        loesung.innerHTML ="Brandstiftung ist die häufigste Waldbrand Ursache. Ein großer Teil der Waldbrände ist auf Brandstiftung und leichtsinniges Verhalten zurückzuführen";
         stage10r.appendChild(loesung);
         loesung.id = "loesung";
 
@@ -1379,7 +1379,7 @@ class Falsch10 extends Stagerf {
 
         //Lösungstext
         var loesung = document.createElement('div');
-        loesung.innerHTML ="Lösungstext";
+        loesung.innerHTML ="Brandstiftung ist die häufigste Waldbrand Ursache. Ein großer Teil der Waldbrände ist auf Brandstiftung und leichtsinniges Verhalten zurückzuführen";
         stage10f.appendChild(loesung);
         loesung.id = "loesung";
 
@@ -1681,43 +1681,43 @@ class Endstage extends Stage {
 
         var punktetext = document.createElement('div');
         if (punkte == 0) {
-          punktetext.innerHTML = "Wie schade! Leider mangelt es bei dir noch an Wissen über dem Klimaschutz und der Umwelt.                                    Versuche dich aufjedenfall über dieses Thema zu erkundigen,                                                                                           denn jeder einzelne kann einen großen beitrag zum Umwelt- und Klimaschutz beitragen.";
+          punktetext.innerHTML = "Wie schade! Leider mangelt es bei dir noch an Wissen über dem Klimaschutz und der Umwelt.  Versuche dich aufjedenfall über dieses Thema zu erkundigen, denn jeder einzelne kann einen großen beitrag zum Umwelt- und Klimaschutz beitragen.";
           endstage.appendChild(punktetext);
         } else if (punkte == 1) {
-          punktetext.innerHTML = "Wie schade! Leider mangelt es bei dir noch an Wissen über dem Klimaschutz und der Umwelt. Versuche dich aufjedenfall über dieses Thema zu erkundigen,                                                                                          denn jeder einzelne kann einen großen beitrag zum Umwelt- und Klimaschutz beitragen.";
+          punktetext.innerHTML = "Wie schade! Leider mangelt es bei dir noch an Wissen über dem Klimaschutz und der Umwelt. Versuche dich aufjedenfall über dieses Thema zu erkundigen, denn jeder einzelne kann einen großen beitrag zum Umwelt- und Klimaschutz beitragen.";
           endstage.appendChild(punktetext);
         } else if (punkte == 2) {
-          punktetext.innerHTML = "Wie schade! Leider mangelt es bei dir noch an Wissen über dem Klimaschutz und der Umwelt.                                     Versuche dich aufjedenfall über dieses Thema zu erkundigen,                                                                                           denn jeder einzelne kann einen großen beitrag zum Umwelt- und Klimaschutz beitragen.";
+          punktetext.innerHTML = "Wie schade! Leider mangelt es bei dir noch an Wissen über dem Klimaschutz und der Umwelt. Versuche dich aufjedenfall über dieses Thema zu erkundigen, denn jeder einzelne kann einen großen beitrag zum Umwelt- und Klimaschutz beitragen.";
           endstage.appendChild(punktetext);
         } else if (punkte == 3) {
-          punktetext.innerHTML = "Wie schade! Leider mangelt es bei dir noch an Wissen über dem Klimaschutz und der Umwelt.                                   Versuche dich aufjedenfall über dieses Thema zu erkundigen,                                                                                           denn jeder einzelne kann einen großen beitrag zum Umwelt- und Klimaschutz beitragen.";
+          punktetext.innerHTML = "Wie schade! Leider mangelt es bei dir noch an Wissen über dem Klimaschutz und der Umwelt.  Versuche dich aufjedenfall über dieses Thema zu erkundigen, denn jeder einzelne kann einen großen beitrag zum Umwelt- und Klimaschutz beitragen.";
           endstage.appendChild(punktetext);
         } else if (punkte == 4) {
-          punktetext.innerHTML = "Gratuliere, du hast die Quiz-Fragen teilweise richtig beantwortet, doch was zum Vorschein kommt                               sind die Wissenslücken, die umbedingt durch weitere Informationen über den Klimaschutz gefüllt werden müssen.                                           Es schadet nicht sich Wissen anzueignen.";
+          punktetext.innerHTML = "Gratuliere, du hast die Quiz-Fragen teilweise richtig beantwortet, doch was zum Vorschein kommt sind die Wissenslücken, die umbedingt durch weitere Informationen über den Klimaschutz gefüllt werden müssen. Es schadet nicht sich Wissen anzueignen.";
           endstage.appendChild(punktetext);
         } else if (punkte == 5) {
-          punktetext.innerHTML = "Gratuliere, du hast die Quiz-Fragen teilweise richtig beantwortet, doch was zum Vorschein kommt                                    sind die Wissenslücken, die umbedingt durch weitere Informationen über den Klimaschutz gefüllt werden müssen.                                            Es schadet nicht sich Wissen anzueignen.";
+          punktetext.innerHTML = "Gratuliere, du hast die Quiz-Fragen teilweise richtig beantwortet, doch was zum Vorschein kommt sind die Wissenslücken, die umbedingt durch weitere Informationen über den Klimaschutz gefüllt werden müssen. Es schadet nicht sich Wissen anzueignen.";
           endstage.appendChild(punktetext);
         } else if (punkte == 6) {
-          punktetext.innerHTML = "Gratuliere, du hast die Quiz-Fragen teilweise richtig beantwortet, doch was zum Vorschein kommt                                  sind die Wissenslücken, die umbedingt durch weitere Informationen über den Klimaschutz gefüllt werden müssen.                                            Es schadet nicht sich Wissen anzueignen.";
+          punktetext.innerHTML = "Gratuliere, du hast die Quiz-Fragen teilweise richtig beantwortet, doch was zum Vorschein kommt  sind die Wissenslücken, die umbedingt durch weitere Informationen über den Klimaschutz gefüllt werden müssen. Es schadet nicht sich Wissen anzueignen.";
           endstage.appendChild(punktetext);
         } else if (punkte == 7) {
-          punktetext.innerHTML = "WOW! Du kennst dich sehr gut mit dem Thema Umweltschutz aus, aber da sind noch einige Lücken,                                      die man mit weiteren Wissen füllen könnte. Weiter so!";
+          punktetext.innerHTML = "WOW! Du kennst dich sehr gut mit dem Thema Umweltschutz aus, aber da sind noch einige Lücken, die man mit weiteren Wissen füllen könnte. Weiter so!";
           endstage.appendChild(punktetext);
         } else if (punkte == 8) {
-          punktetext.innerHTML = "WOW! Du kennst dich sehr gut mit dem Thema Umweltschutz aus, aber da sind noch einige Lücken,                                      die man mit weiteren Wissen füllen könnte. Weiter so!";
+          punktetext.innerHTML = "WOW! Du kennst dich sehr gut mit dem Thema Umweltschutz aus, aber da sind noch einige Lücken, die man mit weiteren Wissen füllen könnte. Weiter so!";
           endstage.appendChild(punktetext);
         } else if (punkte == 9) {
-          punktetext.innerHTML = "WOW! Du kennst dich sehr gut mit dem Thema Umweltschutz aus, aber da sind noch einige Lücken,                                  die man mit weiteren Wissen füllen könnte. Weiter so!";
+          punktetext.innerHTML = "WOW! Du kennst dich sehr gut mit dem Thema Umweltschutz aus, aber da sind noch einige Lücken, die man mit weiteren Wissen füllen könnte. Weiter so!";
           endstage.appendChild(punktetext);
         } else if (punkte == 10) {
-          punktetext.innerHTML = "Power-Aktivist/-in! In Sachen Umweltschutz macht dir niemand etwas vor.                                                         Du kennst dich schon super aus und lernst täglich dazu. Tausche dich mit Familie und Freunden aus und überlegt gemeinsam,                                  wie man die Umwelt besser schützen könnte.";
+          punktetext.innerHTML = "Power-Aktivist/-in! In Sachen Umweltschutz macht dir niemand etwas vor. Du kennst dich schon super aus und lernst täglich dazu. Tausche dich mit Familie und Freunden aus und überlegt gemeinsam, wie man die Umwelt besser schützen könnte.";
           endstage.appendChild(punktetext);
         } else if (punkte == 11) {
-          punktetext.innerHTML = "Power-Aktivist/-in! In Sachen Umweltschutz macht dir niemand etwas vor.                                                          Du kennst dich schon super aus und lernst täglich dazu. Tausche dich mit Familie und Freunden aus und überlegt gemeinsam,                                  wie man die Umwelt besser schützen könnte.";
+          punktetext.innerHTML = "Power-Aktivist/-in! In Sachen Umweltschutz macht dir niemand etwas vor. Du kennst dich schon super aus und lernst täglich dazu. Tausche dich mit Familie und Freunden aus und überlegt gemeinsam, wie man die Umwelt besser schützen könnte.";
           endstage.appendChild(punktetext);
         } else if (punkte == 12) {
-          punktetext.innerHTML = "Power-Aktivist/-in! In Sachen Umweltschutz macht dir niemand etwas vor. Du kennst dich schon super aus und lernst täglich dazu. Tausche dich mit Familie und Freunden aus und überlegt gemeinsam,                              wie man die Umwelt besser schützen könnte.";
+          punktetext.innerHTML = "Power-Aktivist/-in! In Sachen Umweltschutz macht dir niemand etwas vor. Du kennst dich schon super aus und lernst täglich dazu. Tausche dich mit Familie und Freunden aus und überlegt gemeinsam, wie man die Umwelt besser schützen könnte.";
           endstage.appendChild(punktetext);
         } else {
           punktetext.innerHTML = "Fehler";
