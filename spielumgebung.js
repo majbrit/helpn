@@ -1664,7 +1664,7 @@ class Falsch12 extends Stagerf {
 
 class Endstage extends Stage {
     constructor() {
-        super("Ende", "url('Bilder/hintergrund.jpg')")
+        super("Ende", "url('Bilder/start.gif')")
     }
     getContent() {
         var endstage = document.createElement('div');
