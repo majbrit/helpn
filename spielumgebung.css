@@ -159,8 +159,8 @@
 /* Text für Punkte */
 #punktetext {
   position: absolute;
-  top: 10%;
-  right: 10%;
+  top: 20%;
+  right: 20%;
   left: 75%;
 
 
@@ -168,6 +168,8 @@
 
 }
 
+
+}
 #pu {
   position: absolute;
   top: 10%;
@@ -178,5 +180,3 @@
 #punkte {
   color: white;
 }
-
-/* Text für Message */
