@@ -871,19 +871,19 @@ class Seventhstage extends Stage {
 
         //erster Button
         var button = document.createElement('button');
-        button.innerHTML = "falsch";
+        button.innerHTML = "22.000";
         stage7.appendChild(button);
         button.id = "b1";
 
         //zweiter Button
         var button2 = document.createElement('button');
-        button2.innerHTML = "richtig";
+        button2.innerHTML = "26.000";
         stage7.appendChild(button2);
         button2.id = "b2";
 
         //dritter Button
         var button3 = document.createElement('button')
-        button3.innerHTML = "falsch";
+        button3.innerHTML = "18.000";
         stage7.appendChild(button3);
         button3.id = "b3";
 
@@ -901,7 +901,7 @@ class Seventhstage extends Stage {
 
         //Fragestellung
         var text = document.createElement('div');
-        text.innerHTML ="Frage?";
+        text.innerHTML ="Wie viele Robben starben im Jahr 2016 aufgrund Überfischung?";
         stage7.appendChild(text);
         text.id = "text";
 
@@ -943,7 +943,7 @@ class Richtig7 extends Stagerf {
 
         //Lösungstext
         var loesung = document.createElement('div');
-        loesung.innerHTML ="Lösungstext";
+        loesung.innerHTML ="2016 starben ungefähr 26.000 Robben, da sie aufgrund der Überfischung hungerten.";
         stage7r.appendChild(loesung);
         loesung.id = "loesung";
 
@@ -977,7 +977,7 @@ class Falsch7 extends Stagerf {
 
         //Lösungstext
         var loesung = document.createElement('div');
-        loesung.innerHTML ="Lösungstext";
+        loesung.innerHTML ="2016 starben ungefähr 26.000 Robben, da sie aufgrund der Überfischung hungerten.";
         stage7f.appendChild(loesung);
         loesung.id = "loesung";
 
@@ -1139,19 +1139,19 @@ class Ninthstage extends Stage {
 
         //erster Button
         var button = document.createElement('button');
-        button.innerHTML = "richtig";
+        button.innerHTML = "Kohlendioxid Ausstoß";
         stage9.appendChild(button);
         button.id = "b1";
 
         //zweiter Button
         var button2 = document.createElement('button');
-        button2.innerHTML = "falsch";
+        button2.innerHTML = "Kohlenmonoxid Ausstoß";
         stage9.appendChild(button2);
         button2.id = "b2";
 
         //dritter Button
         var button3 = document.createElement('button')
-        button3.innerHTML = "falsch";
+        button3.innerHTML = "Kohlenstoffdioxid Ausstoß";
         stage9.appendChild(button3);
         button3.id = "b3";
 
@@ -1169,7 +1169,7 @@ class Ninthstage extends Stage {
 
         //Fragestellung
         var text = document.createElement('div');
-        text.innerHTML ="Frage?";
+        text.innerHTML ="Pro Jahr werden ca. 30 Millionen Hektar des Regenwaldes abgeholzt. Welche Folgen hat dies?";
         stage9.appendChild(text);
         text.id = "text";
 
@@ -1211,7 +1211,7 @@ class Richtig9 extends Stagerf {
 
         //Lösungstext
         var loesung = document.createElement('div');
-        loesung.innerHTML ="Lösungstext";
+        loesung.innerHTML ="Die Abholzung der Wälder macht ungefähr 15% des weltweiten Ausstoßes von Kohlendioxid aus, welches zur globalen Erwärmung beiträgt.";
         stage9r.appendChild(loesung);
         loesung.id = "loesung";
 
@@ -1245,7 +1245,7 @@ class Falsch9 extends Stagerf {
 
         //Lösungstext
         var loesung = document.createElement('div');
-        loesung.innerHTML ="Lösungstext";
+        loesung.innerHTML ="Die Abholzung der Wälder macht ungefähr 15% des weltweiten Ausstoßes von Kohlendioxid aus, welches zur globalen Erwärmung beiträgt.";
         stage9f.appendChild(loesung);
         loesung.id = "loesung";
 
@@ -1273,19 +1273,19 @@ class Tenthstage extends Stage {
 
         //erster Button
         var button = document.createElement('button');
-        button.innerHTML = "Blitzeinschlag";
+        button.innerHTML = "falsch";
         stage10.appendChild(button);
         button.id = "b1";
 
         //zweiter Button
         var button2 = document.createElement('button');
-        button2.innerHTML = "Hitzeperioden";
+        button2.innerHTML = "falsch";
         stage10.appendChild(button2);
         button2.id = "b2";
 
         //dritter Button
         var button3 = document.createElement('button')
-        button3.innerHTML = "Brandstiftung";
+        button3.innerHTML = "richtig";
         stage10.appendChild(button3);
         button3.id = "b3";
 
@@ -1303,7 +1303,7 @@ class Tenthstage extends Stage {
 
         //Fragestellung
         var text = document.createElement('div');
-        text.innerHTML ="Was ist die meiste/häufigste Ursache von Waldbränden?";
+        text.innerHTML ="Frage?";
         stage10.appendChild(text);
         text.id = "text";
 
@@ -1345,7 +1345,7 @@ class Richtig10 extends Stagerf {
 
         //Lösungstext
         var loesung = document.createElement('div');
-        loesung.innerHTML ="Brandstiftung ist die häufigste Waldbrand Ursache. Ein großer Teil der Waldbrände ist auf Brandstiftung und leichtsinniges Verhalten zurückzuführen";
+        loesung.innerHTML ="Lösungstext";
         stage10r.appendChild(loesung);
         loesung.id = "loesung";
 
@@ -1379,7 +1379,7 @@ class Falsch10 extends Stagerf {
 
         //Lösungstext
         var loesung = document.createElement('div');
-        loesung.innerHTML ="Brandstiftung ist die häufigste Waldbrand Ursache. Ein großer Teil der Waldbrände ist auf Brandstiftung und leichtsinniges Verhalten zurückzuführen";
+        loesung.innerHTML ="Lösungstext";
         stage10f.appendChild(loesung);
         loesung.id = "loesung";
 
