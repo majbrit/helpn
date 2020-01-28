@@ -1823,13 +1823,13 @@ class Endstage extends Stage {
           punktetext.innerHTML = "WOW! Du kennst dich sehr gut mit dem Thema Umweltschutz aus, aber da sind noch einige Lücken, die man mit weiterem Wissen füllen könnte. Weiter so!";
           endstage.appendChild(punktetext);
         } else if (punkte == 10) {
-          punktetext.innerHTML = "Power-Aktivist/-in! In Sachen Umweltschutz macht dir niemand etwas vor. Du kennst dich schon super aus und lernst täglich dazu. Tausche dich mit Familie und Freunden aus und überlegt gemeinsam, wie man die Umwelt besser schützen könnte.";
+          punktetext.innerHTML = "SUPER! In Sachen Umweltschutz macht dir niemand etwas vor. Du kennst dich schon super aus und lernst täglich dazu. Tausche dich mit Familie und Freunden aus und überlegt gemeinsam, wie man die Umwelt besser schützen könnte.";
           endstage.appendChild(punktetext);
         } else if (punkte == 11) {
-          punktetext.innerHTML = "Power-Aktivist/-in! In Sachen Umweltschutz macht dir niemand etwas vor. Du kennst dich schon super aus und lernst täglich dazu. Tausche dich mit Familie und Freunden aus und überlegt gemeinsam, wie man die Umwelt besser schützen könnte.";
+          punktetext.innerHTML = "SUPER! In Sachen Umweltschutz macht dir niemand etwas vor. Du kennst dich schon super aus und lernst täglich dazu. Tausche dich mit Familie und Freunden aus und überlegt gemeinsam, wie man die Umwelt besser schützen könnte.";
           endstage.appendChild(punktetext);
         } else if (punkte == 12) {
-          punktetext.innerHTML = "Power-Aktivist/-in! In Sachen Umweltschutz macht dir niemand etwas vor. Du kennst dich schon super aus und lernst täglich dazu. Tausche dich mit Familie und Freunden aus und überlegt gemeinsam, wie man die Umwelt besser schützen könnte.";
+          punktetext.innerHTML = "SUPER! In Sachen Umweltschutz macht dir niemand etwas vor. Du kennst dich schon super aus und lernst täglich dazu. Tausche dich mit Familie und Freunden aus und überlegt gemeinsam, wie man die Umwelt besser schützen könnte.";
           endstage.appendChild(punktetext);
         } else {
           punktetext.innerHTML = "Fehler";
