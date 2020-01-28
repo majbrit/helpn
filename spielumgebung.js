@@ -1781,11 +1781,6 @@ class Endstage extends Stage {
     getContent() {
         var endstage = document.createElement('div');
 
-        var button = document.createElement('button');
-        button.innerHTML = "Zurück";
-        method"get" action"starseite.hmtl";
-        button.id = "b4";
-
         var text = document.createElement('div');
         text.innerHTML ="Wie viel Umweltschutz steckt in dir?";
         endstage.appendChild(text);
