@@ -1773,6 +1773,9 @@ class Falsch12 extends Stagerf {
 
 
 //Message
+<form action="Startseite.html" method="get">
+<button id="zurueck" type="submit">Zurück</button>
+</form>
 
 class Endstage extends Stage {
     constructor() {
