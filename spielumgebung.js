@@ -207,7 +207,7 @@ class Secoundstage extends Stage {
 
         //erster Button
         var button = document.createElement('button');
-        button.innerHTML = "angebautes Futtermittel";
+        button.innerHTML = "Selbst angebautes Futtermittel";
         stage2.appendChild(button);
         button.id = "b1";
 
