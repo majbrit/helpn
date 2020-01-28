@@ -282,7 +282,7 @@ class Richtig2 extends Stagerf {
 
         //Lösungstext
         var loesung = document.createElement('div');
-        loesung.innerHTML ="Das angebaute Futtermittel ist die Umweltfreundlichere Variante. Sie ist auch kostengünstiger und auch gesünder für die Kühe.";
+        loesung.innerHTML ="Das Selbst angebaute Futtermittel ist die Umweltfreundlichere Variante. Sie ist auch kostengünstiger und auch gesünder für die Kühe.";
         stage2r.appendChild(loesung);
         loesung.id = "loesung";
 
@@ -322,7 +322,7 @@ class Falsch2 extends Stagerf {
 
         //Lösungstext
         var loesung = document.createElement('div');
-        loesung.innerHTML ="Das angebaute Futtermittel ist die Umweltfreundlichere Variante. Sie ist auch kostengünstiger und auch gesünder für die Kühe.";
+        loesung.innerHTML ="Das Selbst angebaute Futtermittel ist die Umweltfreundlichere Variante. Sie ist auch kostengünstiger und auch gesünder für die Kühe.";
         stage2f.appendChild(loesung);
         loesung.id = "loesung";
 
