@@ -95,23 +95,6 @@
 }
 
 
-#b4 {
-    color: #FFFFFF;
-    background-color: #000077;
-    border: 4px solid #FFFFFF;
-
-    position: absolute;
-    bottom: 3%;
-    left: 50%;
-    width: 20%;
-
-    -webkit-transition-duration: 1s; /* Safari */
-    transition-duration: 1s;
-}
-#b4:hover {
-    color: #000000;
-    background-color: #FFFFFF;
-}
 
 /* Button ("weiter") um von Richtig oder Falsch zum nächsten Level zu kommen */
 #ba {
